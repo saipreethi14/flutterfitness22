@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'IconsContent.dart';
 import 'ImageContent.dart';
 import 'ReusableCard.dart';
 
@@ -80,7 +79,7 @@ class _InputPageState extends State<Homepage> {
                       setState(() {});
                     },
                     cardChild: ImageContent(
-                      img1: Image.asset('images/video-camera.png',height: 100,
+                      img1: Image.asset('images/VC.png',height: 100,
                           fit:BoxFit.fill),
                       label: 'VIDEOS',
                     ),
