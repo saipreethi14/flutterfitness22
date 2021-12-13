@@ -1,5 +1,6 @@
 import 'package:ff/HomePage.dart';
 import 'package:ff/ListofExercise.dart';
+import 'package:ff/SignInPage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +17,8 @@ class mainPage extends StatelessWidget {
         scaffoldBackgroundColor: Color(0xFFDBDBEA),
       ),
       //home:Homepage(),
-      home: ListofExercise(),
+      //home: ListofExercise(),
+      home: SignInPage(),
     );
   }
 }
