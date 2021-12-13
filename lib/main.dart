@@ -16,6 +16,7 @@ class mainPage extends StatelessWidget {
         scaffoldBackgroundColor: Color(0xFFDBDBEA),
       ),
       //home:Homepage(),
+      //list of exercisepage
       home: ListofExercise(),
     );
   }
