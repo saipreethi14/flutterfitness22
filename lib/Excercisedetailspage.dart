@@ -25,6 +25,7 @@ class Exercisedetailspage extends StatelessWidget {
       ),
       body: Column(
         children: <Widget>[
+          
           Image.asset('images/L$index.jpg'),
           Container(
             width: 500,

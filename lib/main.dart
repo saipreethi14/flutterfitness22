@@ -1,3 +1,4 @@
+//@dart = 2.8
 import 'package:ff/HomePage.dart';
 import 'package:ff/ListofExercise.dart';
 import 'package:ff/SignInPage.dart';
@@ -9,7 +10,7 @@ void main() {
   ));
 }
 class mainPage extends StatelessWidget {
-  const mainPage({Key? key}) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {
