@@ -6,7 +6,6 @@ import 'ReusableCard.dart';
 class ListofExercise extends StatefulWidget {
   @override
   _ListofExerciseState createState() => _ListofExerciseState();
-
 }
 
 class _ListofExerciseState extends State<ListofExercise> {
