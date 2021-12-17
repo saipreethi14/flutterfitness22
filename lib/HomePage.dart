@@ -8,6 +8,7 @@ import 'Coaches.dart';
 import 'ImageContent.dart';
 import 'ReusableCard.dart';
 import 'about_us.dart';
+import 'bmi.dart';
 
 class Homepage extends StatefulWidget {
   @override
