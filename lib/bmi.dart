@@ -23,14 +23,14 @@ double height = 5;
 double weight = 40;
 double result = 20;
 
-class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
+class bmi extends StatefulWidget {
+  const bmi({Key? key}) : super(key: key);
 
   @override
-  _HomeState createState() => _HomeState();
+  _bmiState createState() => _bmiState();
 }
 
-class _HomeState extends State<Home> {
+class _bmiState extends State<bmi> {
 
   @override
   Widget build(BuildContext context) {
