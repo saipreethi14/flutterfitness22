@@ -37,7 +37,7 @@ class _bmiState extends State<bmi> {
     return Scaffold(
         appBar: AppBar(
           leading: Icon(Icons.menu),
-          title: Text('Project', style: TextStyle(
+          title: Text('BMI Calculator', style: TextStyle(
             fontSize: 22,
             fontWeight: FontWeight.bold,
             color: Colors.white,
@@ -51,7 +51,7 @@ class _bmiState extends State<bmi> {
                 child: Text('Calculate your BMI', style: TextStyle(
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
-                  color: Colors.white,
+                  color: Colors.black,
                 ),),
               ),
               Padding(
@@ -143,14 +143,14 @@ class _bmiState extends State<bmi> {
                   obscureText: false,
                   decoration: InputDecoration(
                     filled: true,
-                    fillColor: Colors.black12,
+                    fillColor: Colors.grey,
                     focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.white, width: 5.0),
                     ),
                     border: OutlineInputBorder(),
                     labelText: 'Height',
                     labelStyle: TextStyle(
-                      color: Colors.white,
+                      color: Colors.black,
                       fontSize: 18,
                     ),
                     hintText: 'Enter your height',
@@ -167,14 +167,14 @@ class _bmiState extends State<bmi> {
                   obscureText: false,
                   decoration: InputDecoration(
                     filled: true,
-                    fillColor: Colors.black12,
+                    fillColor: Colors.grey,
                     focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.white, width: 5.0),
                     ),
                     border: OutlineInputBorder(),
                     labelText: 'Weight',
                     labelStyle: TextStyle(
-                      color: Colors.white,
+                      color: Colors.black,
                       fontSize: 18,
                     ),
                     hintText: 'Enter your weight',
@@ -186,7 +186,7 @@ class _bmiState extends State<bmi> {
                 child: Container(
                   height: 130,
                   width: double.infinity,
-                  color: Colors.black12,
+                  color: Colors.grey,
                   child: Column(
                     children: <Widget>[
                       Center(
@@ -195,7 +195,7 @@ class _bmiState extends State<bmi> {
                           child: Text('Age', style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),),
                         ),
                       ),
@@ -204,7 +204,7 @@ class _bmiState extends State<bmi> {
                         child: Text(age.toString(), style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                          color: Colors.black,
                         ),),
                       ),
                       Padding(
@@ -259,7 +259,7 @@ class _bmiState extends State<bmi> {
                       fixedSize: Size.fromWidth(400),
                       primary: Colors.black,
                       onSurface: Colors.red,
-                      backgroundColor: Colors.white,
+                      backgroundColor: Colors.grey,
                     ),
                   ),
                 ),
