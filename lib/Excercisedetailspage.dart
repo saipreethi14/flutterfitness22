@@ -25,10 +25,11 @@ class Exercisedetailspage extends StatelessWidget {
       ),
       body: Column(
         children: <Widget>[
+          
           Image.asset('images/L$index.jpg'),
           Container(
             width: 500,
-            height: 400,
+            height: 300,
             color: Colors.black,
 
             child: Align(
