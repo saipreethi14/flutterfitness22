@@ -3,6 +3,20 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'plusMinus.dart';
 import 'dart:math';
+import 'gender.dart';
+
+enum Gender {
+  male,
+  female,
+}
+Gender selectedGender = Gender.male;
+
+const activeColor = Color(0xFFFFFFFF);
+const inactiveColor = Colors.grey;
+
+const maleColor = inactiveColor;
+const femaleColor = inactiveColor;
+
 
 int age = 5;
 double height = 5;
@@ -23,7 +37,7 @@ class _bmiState extends State<bmi> {
     return Scaffold(
         appBar: AppBar(
           leading: Icon(Icons.menu),
-          title: Text('Project', style: TextStyle(
+          title: Text('BMI Calculator', style: TextStyle(
             fontSize: 22,
             fontWeight: FontWeight.bold,
             color: Colors.white,
@@ -37,7 +51,7 @@ class _bmiState extends State<bmi> {
                 child: Text('Calculate your BMI', style: TextStyle(
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
-                  color: Colors.white,
+                  color: Colors.black,
                 ),),
               ),
               Padding(
@@ -68,6 +82,58 @@ class _bmiState extends State<bmi> {
                   ),
                 ),
               ),
+              //.............................................
+              Padding(
+                padding: const EdgeInsets.all(5.0),
+                child: Row(
+                  children: <Widget>[
+                    Gender1(
+                      otp: (){
+                        setState(() {
+                          selectedGender = Gender.male;
+                        });
+                      },
+                      contColor: selectedGender == Gender.male ? activeColor : inactiveColor,
+                      customChild: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            Icon(FontAwesomeIcons.mars,
+                                size: 70, color: Colors.black),
+                            SizedBox(height: 10.0),
+                            Text('Male', style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black,
+                            ),),
+                          ]
+                      ),
+                    ),
+
+                    Gender1(
+                      otp: (){
+                        setState(() {
+                          selectedGender = Gender.female;
+                        });
+                      },
+                      contColor: selectedGender == Gender.female ? activeColor : inactiveColor,
+                      customChild: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            Icon(FontAwesomeIcons.venus,
+                              size: 70, color: Colors.black,),
+                            SizedBox(height: 10.0),
+                            Text('Female', style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black,
+                            ),),
+                          ]
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              //................................
               Padding(
                 padding: const EdgeInsets.only(top: 18.0, left:28.0, right: 28.0),
                 child: TextField(
@@ -77,14 +143,14 @@ class _bmiState extends State<bmi> {
                   obscureText: false,
                   decoration: InputDecoration(
                     filled: true,
-                    fillColor: Colors.black12,
+                    fillColor: Colors.grey,
                     focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.white, width: 5.0),
                     ),
                     border: OutlineInputBorder(),
                     labelText: 'Height',
                     labelStyle: TextStyle(
-                      color: Colors.white,
+                      color: Colors.black,
                       fontSize: 18,
                     ),
                     hintText: 'Enter your height',
@@ -101,14 +167,14 @@ class _bmiState extends State<bmi> {
                   obscureText: false,
                   decoration: InputDecoration(
                     filled: true,
-                    fillColor: Colors.black12,
+                    fillColor: Colors.grey,
                     focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.white, width: 5.0),
                     ),
                     border: OutlineInputBorder(),
                     labelText: 'Weight',
                     labelStyle: TextStyle(
-                      color: Colors.white,
+                      color: Colors.black,
                       fontSize: 18,
                     ),
                     hintText: 'Enter your weight',
@@ -120,7 +186,7 @@ class _bmiState extends State<bmi> {
                 child: Container(
                   height: 130,
                   width: double.infinity,
-                  color: Colors.black12,
+                  color: Colors.grey,
                   child: Column(
                     children: <Widget>[
                       Center(
@@ -129,7 +195,7 @@ class _bmiState extends State<bmi> {
                           child: Text('Age', style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),),
                         ),
                       ),
@@ -138,7 +204,7 @@ class _bmiState extends State<bmi> {
                         child: Text(age.toString(), style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                          color: Colors.black,
                         ),),
                       ),
                       Padding(
@@ -190,10 +256,10 @@ class _bmiState extends State<bmi> {
                       ],
                     ),
                     style: TextButton.styleFrom(
-                      fixedSize: Size.fromWidth(140),
+                      fixedSize: Size.fromWidth(400),
                       primary: Colors.black,
                       onSurface: Colors.red,
-                      backgroundColor: Colors.white,
+                      backgroundColor: Colors.grey,
                     ),
                   ),
                 ),
@@ -205,3 +271,4 @@ class _bmiState extends State<bmi> {
     );
   }
 }
+

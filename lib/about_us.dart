@@ -30,7 +30,7 @@ class _AboutUsState extends State<AboutUs> {
                   child: Text('Our Team', style: TextStyle(
                     fontSize: 60,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                    color: Colors.black,
                     fontFamily: 'MonteCarlo',
                   ),),
                 ),
@@ -41,7 +41,7 @@ class _AboutUsState extends State<AboutUs> {
                   child: Text('We are continuously trying to improve our work to provide the user an awesome experience. Our goal is to give better and relevant experience to our customers.', style: TextStyle(
                     fontSize: 13,
                     fontWeight: FontWeight.bold,
-                    color: Colors.grey,
+                    color: Colors.black,
                     fontStyle: FontStyle.italic,
                     // fontFamily: 'MonteCarlo',
                   ),),
