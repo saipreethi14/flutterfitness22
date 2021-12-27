@@ -1,13 +1,17 @@
 import 'package:ff/ListofExercise.dart';
+import 'package:ff/SignInPage.dart';
 import 'package:ff/bmi.dart';
 import 'package:ff/videoPage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:provider/src/provider.dart';
 
 import 'Coaches.dart';
 import 'ImageContent.dart';
 import 'ReusableCard.dart';
 import 'about_us.dart';
+import 'auth_service.dart';
 
 class Homepage extends StatefulWidget {
   @override
@@ -15,6 +19,7 @@ class Homepage extends StatefulWidget {
 }
 
 class _InputPageState extends State<Homepage> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,11 +31,14 @@ class _InputPageState extends State<Homepage> {
           title: Text('GET SET GO'),
           actions: [
             IconButton(
-              onPressed: () {},
-              icon: Icon(Icons.more_vert),
+              onPressed: () {
+                context.read<AuthService>().Signout().then((result) => Navigator.push(context, MaterialPageRoute(builder: (Context) => SignInPage())));
+              },
+              icon: Icon(Icons.logout),
             ),
           ],
           backgroundColor: Colors.black,
+
         ),
         body: Column(children: <Widget>[
           Expanded(
@@ -73,7 +81,7 @@ class _InputPageState extends State<Homepage> {
                   child: ResusableCard(
                     onPress: () {
                       setState(() {
-                        Navigator.push(context, MaterialPageRoute(builder: (Context) => Contacts()));
+
 
                       });
                     },

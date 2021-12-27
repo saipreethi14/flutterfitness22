@@ -1,8 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
 
 import 'HomePage.dart';
 import 'SignUpPage.dart';
+import 'auth_service.dart';
 
 class SignInPage extends StatefulWidget {
   const SignInPage({Key? key}) : super(key: key);
@@ -12,6 +15,9 @@ class SignInPage extends StatefulWidget {
 }
 
 class _SignInPageState extends State<SignInPage> {
+  TextEditingController emailController = new TextEditingController();
+  TextEditingController passwordController = new TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,6 +43,7 @@ class _SignInPageState extends State<SignInPage> {
             Padding(
               padding: EdgeInsets.all(15),
               child: TextField(
+                controller: emailController,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'User EmailID',
@@ -47,6 +54,7 @@ class _SignInPageState extends State<SignInPage> {
             Padding(
               padding: EdgeInsets.all(15),
               child: TextField(
+                controller: passwordController,
                 obscureText: true,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
@@ -64,9 +72,24 @@ class _SignInPageState extends State<SignInPage> {
                   child: Text('Login'),
                   onPressed: () {
                     // ignore: non_constant_identifier_names
-                    Navigator.push(context, MaterialPageRoute(builder: (Context) => Homepage()));
+                    final String email = emailController.text.trim();
+                    final String password = passwordController.text.trim();
+
+                    if(email.isEmpty){
+                    print("Email is Empty");
+                    } else {
+                      if (password.isEmpty) {
+                        print("Password is Empty");
+                      }else {
+                        context.read<AuthService>().login(
+                          email,
+                          password,
+                        );
+                      }
+                    }
                   },
-                )),
+                )
+            ),
             Container(
                 child: Row(
                   children: <Widget>[

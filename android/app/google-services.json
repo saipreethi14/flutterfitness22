@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "409965900997",
+    "project_id": "fitflutterapp-a8ee0",
+    "storage_bucket": "fitflutterapp-a8ee0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409965900997:android:9bff59f429ed3bd1e66cac",
+        "android_client_info": {
+          "package_name": "com.example.ff"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "409965900997-r8oscd6roel73r8avankkhtbjnpgk8t6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNGAF8RFJN39CzWvB1Lk-ZE-5NwGOXMfE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "409965900997-r8oscd6roel73r8avankkhtbjnpgk8t6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

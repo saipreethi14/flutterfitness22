@@ -2,27 +2,50 @@
 import 'package:ff/HomePage.dart';
 import 'package:ff/ListofExercise.dart';
 import 'package:ff/SignInPage.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'PlusMinus.dart';
+import 'auth_service.dart';
 
-void main() {
-  runApp(mainPage(
-  ));
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Firebase.initializeApp();
+  runApp(MyApp());
 }
-class mainPage extends StatelessWidget {
 
-
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(
-        primaryColor: Color(0xFFE7E7EE),
-        scaffoldBackgroundColor: Color(0xFFDBDBEA),
+    return MultiProvider(
+      providers: [
+        Provider<AuthService>(
+          create: (_) => AuthService(FirebaseAuth.instance),
+        ),
+        StreamProvider(
+          create: (context) => context.read<AuthService>().authStateChanges,
+        ),
+      ],
+      child: MaterialApp(
+        title: "APP",
+        home: AuthWrapper(),
       ),
-      //home:Homepage(),
-      //home: ListofExercise(),
-      home: SignInPage(),
     );
   }
+}
+
+class AuthWrapper extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    final user = context.watch<User>();
+
+    if(user != null){
+      return Homepage();
+    }
+    return SignInPage();
+  }
+
 }

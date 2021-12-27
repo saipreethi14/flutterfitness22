@@ -2,6 +2,9 @@ import 'package:ff/HomePage.dart';
 import 'package:ff/SignInPage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import 'auth_service.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({Key? key}) : super(key: key);
@@ -11,6 +14,10 @@ class SignUpPage extends StatefulWidget {
 }
 
 class _SignUpPageState extends State<SignUpPage> {
+
+  TextEditingController emailController = new TextEditingController();
+  TextEditingController passwordController = new TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,6 +43,7 @@ class _SignUpPageState extends State<SignUpPage> {
             Padding(
               padding: EdgeInsets.all(15),
               child: TextField(
+                controller: emailController,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'User EmailID',
@@ -46,6 +54,7 @@ class _SignUpPageState extends State<SignUpPage> {
             Padding(
               padding: EdgeInsets.all(15),
               child: TextField(
+                controller: passwordController,
                 obscureText: true,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
@@ -73,7 +82,21 @@ class _SignUpPageState extends State<SignUpPage> {
                   color: Colors.black,
                   child: Text('Login'),
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (Context) => Homepage()));
+                    final String email = emailController.text.trim();
+                    final String password = passwordController.text.trim();
+
+                    if (email.isEmpty) {
+                      print("Email is Empty");
+                    } else {
+                      if (password.isEmpty) {
+                        print("Password is Empty");
+                      } else {
+                        context.read<AuthService>().Signup(
+                          email,
+                          password,
+                        );
+                      }
+                    }
                     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                       content: Text("Acoount created"),
                     ));
@@ -92,7 +115,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       onPressed: () {
                         //signIN screen
                         Navigator.push(context, MaterialPageRoute(builder: (Context) => SignInPage()));
-                      },
+                      }
                     )
                   ],
                   mainAxisAlignment: MainAxisAlignment.center,
