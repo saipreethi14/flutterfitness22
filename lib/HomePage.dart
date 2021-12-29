@@ -1,3 +1,5 @@
+// ignore: file_names
+import 'package:ff/CoachData.dart';
 import 'package:ff/ListofExercise.dart';
 import 'package:ff/SignInPage.dart';
 import 'package:ff/bmi.dart';
@@ -7,7 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:provider/src/provider.dart';
 
-import 'Coaches.dart';
+import 'Coach.dart';
 import 'ImageContent.dart';
 import 'ReusableCard.dart';
 import 'about_us.dart';
@@ -19,6 +21,7 @@ class Homepage extends StatefulWidget {
 }
 
 class _InputPageState extends State<Homepage> {
+  late FirebaseAuth _auth;
 
   @override
   Widget build(BuildContext context) {
@@ -33,6 +36,7 @@ class _InputPageState extends State<Homepage> {
             IconButton(
               onPressed: () {
                 context.read<AuthService>().Signout().then((result) => Navigator.push(context, MaterialPageRoute(builder: (Context) => SignInPage())));
+
               },
               icon: Icon(Icons.logout),
             ),
@@ -48,6 +52,7 @@ class _InputPageState extends State<Homepage> {
                     onPress: () {
                       setState(() {
                         Navigator.push(context, MaterialPageRoute(builder: (Context) => ListofExercise()));
+                        print(_auth.currentUser);
                       });
                     },
                     cardChild: ImageContent(
@@ -81,6 +86,7 @@ class _InputPageState extends State<Homepage> {
                   child: ResusableCard(
                     onPress: () {
                       setState(() {
+                        context.read<AuthService>().Signout().then((result) => Navigator.push(context, MaterialPageRoute(builder: (Context) => CoachData())));
 
 
                       });

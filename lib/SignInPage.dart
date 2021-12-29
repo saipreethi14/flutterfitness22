@@ -85,6 +85,7 @@ class _SignInPageState extends State<SignInPage> {
                           email,
                           password,
                         );
+                        print(email + "Logged in");
                       }
                     }
                   },
