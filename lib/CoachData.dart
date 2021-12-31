@@ -1,13 +1,14 @@
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:ff/Coachsetter.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'SignInPage.dart';
 import 'package:ff/auth_service.dart';
 import 'package:flutter/cupertino.dart';
 
-class CoachData extends StatefulWidget {
-
+class CoachData extends StatefulWidget with ChangeNotifier {
 
   @override
   _CoachDataState createState() => _CoachDataState();
@@ -15,18 +16,30 @@ class CoachData extends StatefulWidget {
 
 class _CoachDataState extends State<CoachData> {
 
-  @override
-  void initState() {
-   Coachsetter coachsetter = Provider.of<Coachsetter>(context, listen: false);
-  //getCoach(coachsetter);
-   super.initState();
+
+  Widget _buildList(QuerySnapshot snapshot) {
+    return ListView.builder(
+        itemCount: snapshot.docs.length,
+        itemBuilder: (context, index) {
+          final doc = snapshot.docs[index];
+          return ListTile(
+          leading: CircleAvatar(
+            backgroundColor: Colors.grey,
+            child: GestureDetector(onTap: () {}),
+          ),
+            title: Text(doc["name"]),
+            subtitle: Text(doc["Age"]),
+          );
+        }
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-   AuthService authnotifier = Provider.of<AuthService>(context,listen: false);
-   Coachsetter coachnotifier = Provider.of<Coachsetter>(context);
+    WidgetsFlutterBinding.ensureInitialized();
+     Firebase.initializeApp();
+
    
    return Scaffold(
      appBar: AppBar(
@@ -42,24 +55,21 @@ class _CoachDataState extends State<CoachData> {
          ),
        ],
      ),
-     body: ListView.separated(
-         itemBuilder: (BuildContext context,int index){
-           return ListTile(
-           title: Text(coachnotifier.coachList[index].name),
-
-
-
-           );
-    }, itemCount: coachnotifier.coachList.length, separatorBuilder: (BuildContext context, int index) {
-           return Divider(
-           color: Colors.black,
-           );
-    },
-     ),
+     body: Padding(
+       padding: const EdgeInsets.all(8.0),
+       child: Column(children: [
+         StreamBuilder<QuerySnapshot>(
+             stream: FirebaseFirestore.instance.collection("coach")
+                 .snapshots(),
+             builder: (context, snapshot) {
+               if (!snapshot.hasData) return LinearProgressIndicator();
+               return Expanded(
+                   child: _buildList(snapshot.requireData)
+               );
+             }
+         )
+       ]),
+     )
    );
-  
-  
-  
   }
-  
-} 
+}

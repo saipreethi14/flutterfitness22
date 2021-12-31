@@ -8,13 +8,13 @@ class Coach {
   late String emailid;
   late String image;
 
+Coach();
 
-
-  Coach.fromMap(Map<String, dynamic> data){
-    name = data['name'];
-    image = data['image'];
-    age = data['Age'];
-    proficient = data['proficient'];
-    emailid = data['Email ID'];
+    Coach.fromMap(Map<String, dynamic> data){
+      name = data['name'];
+      image = data['image'];
+      age = data['Age'];
+      proficient = data['proficient'];
+      emailid = data['Email ID'];
   }
 }
