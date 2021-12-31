@@ -8,16 +8,47 @@ class ListofExercise extends StatefulWidget {
   _ListofExerciseState createState() => _ListofExerciseState();
 }
 
-class _ListofExerciseState extends State<ListofExercise> {
+class _ListofExerciseState extends State<ListofExercise>
+    with TickerProviderStateMixin {
+  late AnimationController animationController;
+  bool isPlaying = false;
+
+  @override
+  void initState() {
+    super.initState();
+    animationController =
+        AnimationController(vsync: this, duration: Duration(milliseconds: 350));
+  }
+
+  void _handleOnPressed() {
+    setState(() {
+      isPlaying = !isPlaying;
+      isPlaying ? animationController.forward() : animationController.reverse();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey,
       appBar: AppBar(
         leading: IconButton(
-          onPressed: () {},
-          icon: Icon(Icons.fitness_center),
+          iconSize: 25,
+          splashColor: Colors.white70,
+          icon: AnimatedIcon(
+            icon: AnimatedIcons.menu_home,
+            progress: animationController,
+          ),
+          onPressed: () => _handleOnPressed(),
         ),
-        title: Text('GET SET GO'),
+        // leading: IconButton(
+        //   onPressed: () {},
+        //   icon: Icon(Icons.fitness_center),
+        // ),
+        title: Text(
+          'GET SET GO',
+          style: TextStyle(fontFamily: 'Aleo'),
+        ),
         actions: [
           IconButton(
             onPressed: () {},
@@ -31,7 +62,7 @@ class _ListofExerciseState extends State<ListofExercise> {
   }
 }
 
-ListView _buildListView(BuildContext context){
+ListView _buildListView(BuildContext context) {
   final List<String> alphabets = <String>[
     'Front Planks',
     'Side Planks',
@@ -44,14 +75,17 @@ ListView _buildListView(BuildContext context){
 
   return ListView.builder(
       itemCount: alphabets.length,
-      itemBuilder: (_,index){
+      itemBuilder: (_, index) {
         return ResusableCard(
           onPress: () {
-            Navigator.push(context, MaterialPageRoute(builder: (Context) => Exercisedetailspage(index)));
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (Context) => Exercisedetailspage(index)));
           },
           cardChild: ImageContent(
-            img1: Image.asset('images/L$index.jpg',height: 100,
-                fit:BoxFit.fill),
+            img1: Image.asset('images/L$index.jpg',
+                height: 100, fit: BoxFit.fill),
             label: alphabets[index].toUpperCase(),
           ),
           theColor: Colors.white,
@@ -63,6 +97,5 @@ ListView _buildListView(BuildContext context){
         //     subtitle: Text('the subtitle',style:TextStyle(fontWeight: FontWeight.bold,color: Colors.black),),
         //           ),
         // );
-      }
-  );
+      });
 }
