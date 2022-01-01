@@ -17,18 +17,49 @@ class CoachData extends StatefulWidget with ChangeNotifier {
 class _CoachDataState extends State<CoachData> {
 
 
+
   Widget _buildList(QuerySnapshot snapshot) {
-    return ListView.builder(
+    return ListView.separated(
+        separatorBuilder: (context, index) => Divider(
+          color: Colors.black,
+          thickness: 2,
+        ),
         itemCount: snapshot.docs.length,
         itemBuilder: (context, index) {
           final doc = snapshot.docs[index];
-          return ListTile(
-          leading: CircleAvatar(
-            backgroundColor: Colors.grey,
-            child: GestureDetector(onTap: () {}),
-          ),
-            title: Text(doc["name"]),
-            subtitle: Text(doc["Age"]),
+          return Card(
+            elevation: 0,
+            color: Colors.transparent,
+            child: Row(
+              children: <Widget>[
+                Padding(padding: EdgeInsets.all(10.0),),
+               Column(
+                 children: <Widget>[
+                   Padding(padding: EdgeInsets.all(10.0),),
+                   CircleAvatar(
+                     backgroundImage: NetworkImage(doc['image']),
+                     radius: 50,
+                     backgroundColor: Colors.grey,
+                     child: GestureDetector(onTap: () {}),
+                   ),
+                 ],
+               ),
+                Column(
+                  children: <Widget>[
+                    Padding(padding: EdgeInsets.all(10.0),),
+                    Text("Name " + doc["name"], style:
+                    TextStyle(fontSize: 15 )),
+                    Text("Age: " + doc["Age"], style:
+                    TextStyle(fontSize: 15),),
+                    Text("Proficient: " + doc["proficient"], style:
+                    TextStyle(fontSize: 15),),
+                    Text("Email ID: " + doc["Email ID"], style:
+                    TextStyle(fontSize: 15),),
+
+                  ],
+                )
+              ],
+            ),
           );
         }
     );
