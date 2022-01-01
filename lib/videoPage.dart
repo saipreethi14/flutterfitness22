@@ -9,6 +9,7 @@ class videoPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.blueGrey[100],
       appBar: AppBar(
+        backgroundColor: Colors.black87,
         automaticallyImplyLeading: false,
         title: Text('Exercise video player'),
         centerTitle: true,
@@ -17,36 +18,31 @@ class videoPage extends StatelessWidget {
         children: <Widget>[
           VideoItems(
             videoPlayerController: VideoPlayerController.network(
-                'https://thumbs.dreamstime.com/videothumb_large12766/127668320.mp4'
-            ),
+                'https://thumbs.dreamstime.com/videothumb_large12766/127668320.mp4'),
             looping: false,
             autoplay: true,
           ),
           VideoItems(
             videoPlayerController: VideoPlayerController.network(
-                'https://thumbs.dreamstime.com/videothumb_large12720/127202515.mp4'
-            ),
+                'https://thumbs.dreamstime.com/videothumb_large12720/127202515.mp4'),
             looping: false,
             autoplay: true,
           ),
           VideoItems(
             videoPlayerController: VideoPlayerController.network(
-                'https://thumbs.dreamstime.com/videothumb_large12766/127668320.mp4'
-            ),
+                'https://thumbs.dreamstime.com/videothumb_large12766/127668320.mp4'),
             looping: false,
             autoplay: true,
           ),
           VideoItems(
             videoPlayerController: VideoPlayerController.network(
-                'https://thumbs.dreamstime.com/videothumb_large12720/127200181.mp4'
-            ),
+                'https://thumbs.dreamstime.com/videothumb_large12720/127200181.mp4'),
             looping: false,
             autoplay: true,
           ),
           VideoItems(
             videoPlayerController: VideoPlayerController.network(
-                'https://thumbs.dreamstime.com/videothumb_large12720/127201753.mp4'
-            ),
+                'https://thumbs.dreamstime.com/videothumb_large12720/127201753.mp4'),
             looping: true,
             autoplay: true,
           ),

@@ -14,7 +14,6 @@ class SignUpPage extends StatefulWidget {
 }
 
 class _SignUpPageState extends State<SignUpPage> {
-
   TextEditingController emailController = new TextEditingController();
   TextEditingController passwordController = new TextEditingController();
 
@@ -69,11 +68,12 @@ class _SignUpPageState extends State<SignUpPage> {
                 obscureText: true,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
-                  labelText: 'Retype-your Password again',
+                  labelText: 'Confirm Password',
                   hintText: 'Enter Password',
                 ),
               ),
             ),
+            SizedBox(height: 10),
             Container(
                 height: 50,
                 padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
@@ -92,9 +92,9 @@ class _SignUpPageState extends State<SignUpPage> {
                         print("Password is Empty");
                       } else {
                         context.read<AuthService>().Signup(
-                          email,
-                          password,
-                        );
+                              email,
+                              password,
+                            );
                       }
                     }
                     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
@@ -102,24 +102,27 @@ class _SignUpPageState extends State<SignUpPage> {
                     ));
                   },
                 )),
+            //SizedBox(height: 10),
             Container(
                 child: Row(
-                  children: <Widget>[
-                    Text('Do you  have account?'),
-                    FlatButton(
-                      textColor: Colors.black,
-                      child: Text(
-                        'Sign IN',
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      onPressed: () {
-                        //signIN screen
-                        Navigator.push(context, MaterialPageRoute(builder: (Context) => SignInPage()));
-                      }
-                    )
-                  ],
-                  mainAxisAlignment: MainAxisAlignment.center,
-                )),
+              children: <Widget>[
+                Text('Already have an account ?'),
+                FlatButton(
+                    textColor: Colors.black,
+                    child: Text(
+                      'Sign In',
+                      style: TextStyle(fontSize: 16),
+                    ),
+                    onPressed: () {
+                      //signIN screen
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (Context) => SignInPage()));
+                    })
+              ],
+              mainAxisAlignment: MainAxisAlignment.center,
+            )),
           ],
         ),
       ),

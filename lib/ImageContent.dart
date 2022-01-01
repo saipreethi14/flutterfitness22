@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-
 class ImageContent extends StatelessWidget {
-
   ImageContent({required this.img1, required this.label});
 
   final Image img1;
@@ -17,8 +15,11 @@ class ImageContent extends StatelessWidget {
         SizedBox(
           height: 15.0,
         ),
-
-        Text(label,style:TextStyle(fontWeight: FontWeight.bold,color: Colors.black)),
+        Text(label,
+            style: TextStyle(
+                fontFamily: 'Aleo',
+                fontWeight: FontWeight.bold,
+                color: Colors.black)),
       ],
     );
   }

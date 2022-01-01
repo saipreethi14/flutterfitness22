@@ -85,6 +85,12 @@ flutter:
     - family: MonteCarlo
       fonts:
         - asset: fonts/MonteCarlo-Regular.ttf
+        - asset: fonts/c4mv1nF8G8_s8ArD0D1ogoY.ttf
+
+    - family: Aleo
+      fonts:
+       - asset: fonts/c4mv1nF8G8_s8ArD0D1ogoY.ttf
+
 
   # fonts:
   #   - family: Schyler

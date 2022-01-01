@@ -2,8 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-
-import 'HomePage.dart';
 import 'SignUpPage.dart';
 import 'auth_service.dart';
 
@@ -41,18 +39,18 @@ class _SignInPageState extends State<SignInPage> {
         child: Column(
           children: <Widget>[
             Padding(
-              padding: EdgeInsets.all(15),
+              padding: EdgeInsets.all(20),
               child: TextField(
                 controller: emailController,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
-                  labelText: 'User EmailID',
-                  hintText: 'Enter Your EmailID',
+                  labelText: 'User Email Id',
+                  hintText: 'Enter Your Email ID',
                 ),
               ),
             ),
             Padding(
-              padding: EdgeInsets.all(15),
+              padding: EdgeInsets.all(20),
               child: TextField(
                 controller: passwordController,
                 obscureText: true,
@@ -63,8 +61,9 @@ class _SignInPageState extends State<SignInPage> {
                 ),
               ),
             ),
+            SizedBox(height: 10),
             Container(
-                height: 50,
+                height: 45,
                 padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                 child: RaisedButton(
                   textColor: Colors.white,
@@ -75,40 +74,42 @@ class _SignInPageState extends State<SignInPage> {
                     final String email = emailController.text.trim();
                     final String password = passwordController.text.trim();
 
-                    if(email.isEmpty){
-                    print("Email is Empty");
+                    if (email.isEmpty) {
+                      print("Email is Empty");
                     } else {
                       if (password.isEmpty) {
                         print("Password is Empty");
-                      }else {
+                      } else {
                         context.read<AuthService>().login(
-                          email,
-                          password,
-                        );
+                              email,
+                              password,
+                            );
                         print(email + "Logged in");
                       }
                     }
                   },
-                )
-            ),
+                )),
+            SizedBox(height: 10),
             Container(
                 child: Row(
-                  children: <Widget>[
-                    Text('Does not have account?'),
-                    FlatButton(
-                      textColor: Colors.black,
-                      child: Text(
-                        'Sign up',
-                        style: TextStyle(fontSize: 20),
-                      ),
-                      onPressed: () {
-                        //signup screen
-                        Navigator.push(context, MaterialPageRoute(builder: (Context) => SignUpPage()));
-                      },
-                    )
-                  ],
-                  mainAxisAlignment: MainAxisAlignment.center,
-                )),
+              children: <Widget>[
+                Text('Do not have an account?'),
+                FlatButton(
+                  textColor: Colors.black,
+                  child: Text(
+                    'Sign up',
+                    style: TextStyle(fontSize: 16),
+                  ),
+                  onPressed: () {
+                    //signup screen
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (Context) => SignUpPage()));
+                  },
+                )
+              ],
+              mainAxisAlignment: MainAxisAlignment.center,
+            )),
+            SizedBox(height: 10),
             Container(
                 height: 50,
                 padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
@@ -116,8 +117,7 @@ class _SignInPageState extends State<SignInPage> {
                   textColor: Colors.white,
                   color: Colors.black,
                   child: Text('LOGIN WITH FACEBOOK'),
-                  onPressed: () {
-                  },
+                  onPressed: () {},
                 )),
           ],
         ),
