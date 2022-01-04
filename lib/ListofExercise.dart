@@ -41,10 +41,6 @@ class _ListofExerciseState extends State<ListofExercise>
           ),
           onPressed: () => _handleOnPressed(),
         ),
-        // leading: IconButton(
-        //   onPressed: () {},
-        //   icon: Icon(Icons.fitness_center),
-        // ),
         title: Text(
           'GET SET GO',
           style: TextStyle(fontFamily: 'Aleo'),
@@ -81,8 +77,7 @@ ListView _buildListView(BuildContext context) {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (Context) => Exercisedetailspage(index)));
-          },
+                    builder: (Context) => Exercisedetailspage(index)));},
           cardChild: ImageContent(
             img1: Image.asset('images/L$index.jpg',
                 height: 200, fit: BoxFit.fill),
