@@ -70,7 +70,7 @@ ListView _buildListView(BuildContext context) {
     'Windshield Wipers',
     'Lying Leg Raises',
     'Hanging Leg Raises',
-    'Standing Russian Twists'
+    'Standing  Squats'
   ];
 
   return ListView.builder(
@@ -85,17 +85,11 @@ ListView _buildListView(BuildContext context) {
           },
           cardChild: ImageContent(
             img1: Image.asset('images/L$index.jpg',
-                height: 100, fit: BoxFit.fill),
+                height: 200, fit: BoxFit.fill),
             label: alphabets[index].toUpperCase(),
           ),
           theColor: Colors.white,
         );
-        // return Center(
-        //   child: ListTile(
-        //     leading: Icon(Icons.ac_unit),
-        //     title: Text(alphabets[index],style:TextStyle(fontWeight: FontWeight.bold,color: Colors.black),),
-        //     subtitle: Text('the subtitle',style:TextStyle(fontWeight: FontWeight.bold,color: Colors.black),),
-        //           ),
-        // );
+
       });
 }
