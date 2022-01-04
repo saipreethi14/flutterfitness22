@@ -26,7 +26,7 @@ class _AboutUsState extends State<AboutUs> {
             children: <Widget> [
               Center(
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 18.0),
+                  padding: const EdgeInsets.only(top: 10.0),
                   child: Text('Our Team', style: TextStyle(
                     fontSize: 60,
                     fontWeight: FontWeight.bold,
@@ -39,7 +39,7 @@ class _AboutUsState extends State<AboutUs> {
                 child: Padding(
                   padding: const EdgeInsets.only(top:10.0, right: 1.0, left: 10.0),
                   child: Text('We are continuously trying to improve our work to provide the user an awesome experience. Our goal is to give better and relevant experience to our customers.', style: TextStyle(
-                    fontSize: 13,
+                    fontSize: 17,
                     fontWeight: FontWeight.bold,
                     color: Colors.black,
                     fontStyle: FontStyle.italic,
@@ -48,9 +48,9 @@ class _AboutUsState extends State<AboutUs> {
                 ),
               ),
               Container(
-                height: 450,
+                height: 380,
                 color: Colors.grey,
-                margin: const EdgeInsets.symmetric(vertical: 20.0),
+                margin: const EdgeInsets.symmetric(vertical: 10.0),
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: <Widget>[
@@ -69,7 +69,7 @@ class _AboutUsState extends State<AboutUs> {
                               padding: const EdgeInsets.all(28.0),
                               child: CircleAvatar(
                                 radius: 60.0,
-                                backgroundImage: NetworkImage('https://lumiere-a.akamaihd.net/v1/images/open-uri20150422-20810-1g8eq9w_b9efb986.jpeg'),
+                                backgroundImage: NetworkImage('https://www.nicepng.com/png/detail/258-2587185_kanchan-professional-young-woman-png.png'),
                               ),
                             ),
                             Text('Abcde', style: TextStyle(
@@ -115,7 +115,7 @@ class _AboutUsState extends State<AboutUs> {
                               padding: const EdgeInsets.all(28.0),
                               child: CircleAvatar(
                                 radius: 60.0,
-                                backgroundImage: NetworkImage('https://static.wikia.nocookie.net/dfairies/images/f/fb/Rosetta-Profile2.jpg/revision/latest/top-crop/width/360/height/450?cb=20170729060713'),
+                                backgroundImage: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQyO41XHnhQ30L8YgqmGaJ85h2sHalqtAsOw&usqp=CAU'),
                               ),
                             ),
                             Text('Abcde', style: TextStyle(
@@ -160,7 +160,7 @@ class _AboutUsState extends State<AboutUs> {
                               padding: const EdgeInsets.all(28.0),
                               child: CircleAvatar(
                                 radius: 60.0,
-                                backgroundImage: NetworkImage('https://static.wikia.nocookie.net/disney/images/4/47/Profile_-_Terence.png/revision/latest?cb=20210228093228'),
+                                backgroundImage: NetworkImage('https://img.favpng.com/9/19/21/businessperson-company-leadership-image-sales-png-favpng-yVH49h629HvJ6vg55yttGkbqv.jpg'),
                               ),
                             ),
                             Text('Abcde', style: TextStyle(
@@ -205,7 +205,7 @@ class _AboutUsState extends State<AboutUs> {
                               padding: const EdgeInsets.all(28.0),
                               child: CircleAvatar(
                                 radius: 60.0,
-                                backgroundImage: NetworkImage('https://i.pinimg.com/originals/f5/a9/6e/f5a96efa8a1eee6a2f1c251090580496.jpg'),
+                                backgroundImage: NetworkImage('https://pinnacletekeducator.com/wp-content/uploads/2021/05/depositphotos_12485614-stock-photo-asian-businesswoman-with-tablet-computer.jpg'),
                               ),
                             ),
                             Text('Abcde', style: TextStyle(
