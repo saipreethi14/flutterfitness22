@@ -10,49 +10,46 @@ class ListofExercise extends StatefulWidget {
 
 class _ListofExerciseState extends State<ListofExercise>
     with TickerProviderStateMixin {
-  late AnimationController animationController;
-  bool isPlaying = false;
 
-  @override
-  void initState() {
-    super.initState();
-    animationController =
-        AnimationController(vsync: this, duration: Duration(milliseconds: 350));
-  }
 
-  void _handleOnPressed() {
-    setState(() {
-      isPlaying = !isPlaying;
-      isPlaying ? animationController.forward() : animationController.reverse();
-    });
-  }
+
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.grey[400],
+
       appBar: AppBar(
-        leading: IconButton(
-          iconSize: 25,
-          splashColor: Colors.white70,
-          icon: AnimatedIcon(
-            icon: AnimatedIcons.menu_home,
-            progress: animationController,
-          ),
-          onPressed: () => _handleOnPressed(),
-        ),
-        title: Text(
-          'GET SET GO',
-          style: TextStyle(fontFamily: 'Aleo'),
-        ),
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: Icon(Icons.more_vert),
-          ),
-        ],
-        backgroundColor: Colors.black,
+          backgroundColor: Colors.black,
+          title:
+          Row(
+            children:<Widget> [
+              Text('List Of Exercises', style: TextStyle(
+                fontFamily: 'Aleo',
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),),
+            ],
+          )
       ),
+
+      // appBar: AppBar(
+      //   leading: IconButton(
+      //     iconSize: 25,
+      //     splashColor: Colors.white70,
+      //     icon:Icon(Icons.arrow_back_ios_new_rounded), onPressed: () {  },),
+      //   title: Text(
+      //     'GET SET GO',
+      //     style: TextStyle(fontFamily: 'Aleo'),
+      //   ),
+      //   actions: [
+      //     IconButton(
+      //       onPressed: () {},
+      //       icon: Icon(Icons.more_vert),
+      //     ),
+      //   ],
+      //   backgroundColor: Colors.black,
+      // ),
       body: _buildListView(context),
     );
   }

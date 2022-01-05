@@ -26,6 +26,7 @@ class _InputPageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[400],
         appBar: AppBar(
           leading: IconButton(
             onPressed: () {},

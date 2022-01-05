@@ -15,18 +15,18 @@ enum Gender {
 }
 Gender selectedGender = Gender.male;
 
-const activeColor = Colors.grey;
+const activeColor = Color(0xFFBDBDBD);
 const inactiveColor = Color(0xFFFFFFFF);
 
 const maleColor = inactiveColor;
 const femaleColor = inactiveColor;
 
 
-int age = 5;
-double height = 5;
-double weight = 40;
-double result = 20;
-var comment = "Comment";
+// int age = 0;
+// double height = 0.0;
+// double weight = 0.0;
+// double result=0.0;
+// var comment = "Comment";
 
 class bmi extends StatefulWidget {
   const bmi({Key? key}) : super(key: key);
@@ -37,9 +37,19 @@ class bmi extends StatefulWidget {
 
 class _bmiState extends State<bmi> {
 
+  final TextEditingController _heightController = TextEditingController();
+  final TextEditingController _weightController = TextEditingController();
+
+
+  int age = 0;
+  double height = 0.0;
+  double weight = 0.0;
+  late double _result = 0.0;
+  var comment = "Comment";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
           backgroundColor: Colors.black,
           title:
@@ -66,35 +76,39 @@ class _bmiState extends State<bmi> {
             Padding(
               padding: const EdgeInsets.only(top: 30.0, bottom: 30.0, left: 8.0),
               child: Text('Calculate your BMI', style: TextStyle(
-                fontSize: 32,
+                fontSize: 30,
                 fontWeight: FontWeight.bold,
-                color: Colors.black,
+                color: Colors.white70,
               ),),
             ),
             Padding(
-              padding: const EdgeInsets.all(5.0),
+              padding: const EdgeInsets.all(8.0),
               child: Container(
-                height: 170,
-                width: double.infinity,
-                color: Colors.grey,
+                height: 150,
+                decoration: BoxDecoration(
+                  color: Colors.grey[400],
+                    borderRadius: BorderRadius.all(Radius.circular(20))),
+
+
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text('Result: ', style: TextStyle(
-                        fontSize: 22,
+                      padding: const EdgeInsets.all(20.0),
+                      child: Text('Result ', style: TextStyle(
+                        fontSize: 30,
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                       ),),
                     ),
                     Center(
-                      child: Text(result.toString(), style: TextStyle(
-                        fontSize: 70,
+                      child: Text(_result.toStringAsFixed(2), style: TextStyle(
+                        fontSize: 25,
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                       ),),
                     ),
+                    SizedBox(height: 8),
                     Result(
                       customChild1: Center(
                         child: Text(comment, style: TextStyle(
@@ -167,20 +181,22 @@ class _bmiState extends State<bmi> {
             ),
             //................................
             Padding(
-              padding: const EdgeInsets.only(top: 18.0, left:28.0, right: 28.0),
+              padding: const EdgeInsets.only(top: 10.0, left:28.0, right: 28.0),
               child: TextField(
+                controller: _heightController,
+                keyboardType: TextInputType.number,
                 onChanged: (h) {
                   height = h as double;
                 },
                 obscureText: false,
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: Colors.grey,
+                  fillColor: Colors.grey[400],
                   focusedBorder: OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.white, width: 5.0),
                   ),
                   border: OutlineInputBorder(),
-                  labelText: 'Height',
+                  labelText: 'Height in cm',
                   labelStyle: TextStyle(
                     color: Colors.black,
                     fontSize: 18,
@@ -193,18 +209,20 @@ class _bmiState extends State<bmi> {
             Padding(
               padding: const EdgeInsets.only(top: 18.0, left:28.0, right: 28.0),
               child: TextField(
+                controller: _weightController,
+                keyboardType: TextInputType.number,
                 onChanged: (w) {
-                  height = w as double;
+                 weight = w as double;
                 },
                 obscureText: false,
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: Colors.grey,
+                  fillColor: Colors.grey[400],
                   focusedBorder: OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.white, width: 5.0),
                   ),
                   border: OutlineInputBorder(),
-                  labelText: 'Weight',
+                  labelText: 'Weight in kg',
                   labelStyle: TextStyle(
                     color: Colors.black,
                     fontSize: 18,
@@ -218,7 +236,11 @@ class _bmiState extends State<bmi> {
               child: Container(
                 height: 130,
                 width: double.infinity,
-                color: Colors.grey,
+                decoration: BoxDecoration(
+                  color: Colors.grey[400],
+                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                ),
+
                 child: Column(
                   children: <Widget>[
                     Center(
@@ -273,17 +295,21 @@ class _bmiState extends State<bmi> {
                 child: TextButton(
                   onPressed: (){
                     setState(() {
-                      result = weight/(height*height);
-                      if (result <= 18.5 ){
+                       height = double.parse(_heightController.text) / 100;
+                       weight = double.parse(_weightController.text);
+
+                      _result = weight/(height*height);  ////////////BMI FORMULA//////////////
+                      if (_result <= 18.5 ){
                         comment = 'Under weight';
                       }
-                      else if(result >= 18.5 && result <= 24.9)
+                      else if(_result >= 18.5 && _result<= 24.9)
                       {
                         comment = 'Good';
                       }
                       else{
                         comment = 'Over weight';
                       }
+                      _result = _result;
                     });
                   },
                   child: Column(
@@ -301,7 +327,7 @@ class _bmiState extends State<bmi> {
                     fixedSize: Size.fromWidth(400),
                     primary: Colors.black,
                     onSurface: Colors.red,
-                    backgroundColor: Colors.grey,
+                    backgroundColor: Colors.grey[400],
                   ),
                 ),
               ),
@@ -326,7 +352,7 @@ class _bmiState extends State<bmi> {
                     ),
                     style: TextButton.styleFrom(
                       primary: Colors.black,
-                      backgroundColor: Colors.grey,
+                      backgroundColor: Colors.grey[400],
                       // fixedSize: Size.fromWidth(160),
                     ),
                   ),
@@ -350,7 +376,7 @@ class _bmiState extends State<bmi> {
                     style: TextButton.styleFrom(
                       // fixedSize: Size.fromWidth(80),
                       primary: Colors.black,
-                      backgroundColor: Colors.grey,
+                      backgroundColor: Colors.grey[400],
                     ),
                   ),
                 ),
