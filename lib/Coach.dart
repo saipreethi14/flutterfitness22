@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/material.dart';
 
 class Coach {
 
@@ -6,15 +7,15 @@ class Coach {
   late int age;
   late String proficient;
   late String emailid;
-  late String image;
+  late Image image;
 
+Coach();
 
-
-  Coach.fromMap(Map<String, dynamic> data){
-    name = data['name'];
-    image = data['image'];
-    age = data['Age'];
-    proficient = data['proficient'];
-    emailid = data['Email ID'];
+    Coach.fromMap(Map<String, dynamic> data){
+      name = data['name'];
+      image = data['image'];
+      age = data['Age'];
+      proficient = data['proficient'];
+      emailid = data['Email ID'];
   }
 }

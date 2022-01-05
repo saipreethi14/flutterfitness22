@@ -1,4 +1,5 @@
 //@dart = 2.8
+import 'package:ff/CoachData.dart';
 import 'package:ff/Coachsetter.dart';
 import 'package:ff/HomePage.dart';
 import 'package:ff/ListofExercise.dart';
@@ -7,6 +8,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'CoachData.dart';
+import 'CoachData.dart';
+import 'CoachData.dart';
+import 'CoachData.dart';
 import 'PlusMinus.dart';
 import 'auth_service.dart';
 
@@ -29,6 +34,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(
           create: (context) => Coachsetter(),
         ),
+
         StreamProvider(
           create: (context) => context.read<AuthService>().authStateChanges,
         ),

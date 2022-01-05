@@ -1,7 +1,10 @@
+import 'package:ff/HomePage.dart';
+import 'package:ff/main.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
+import 'package:flutter_login_facebook/flutter_login_facebook.dart';
+import 'MyApp.dart';
 import 'SignUpPage.dart';
 import 'auth_service.dart';
 
@@ -15,7 +18,7 @@ class SignInPage extends StatefulWidget {
 class _SignInPageState extends State<SignInPage> {
   TextEditingController emailController = new TextEditingController();
   TextEditingController passwordController = new TextEditingController();
-
+  static final FacebookLogin facebookSignIn = new FacebookLogin();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -117,7 +120,10 @@ class _SignInPageState extends State<SignInPage> {
                   textColor: Colors.white,
                   color: Colors.black,
                   child: Text('LOGIN WITH FACEBOOK'),
-                  onPressed: () {},
+                  onPressed: () {
+                    final plugin = FacebookLogin(debug: true);
+                    Navigator.push(context, MaterialPageRoute(builder: (Context) => MyApp1(plugin:  plugin,)));
+                  },
                 )),
           ],
         ),

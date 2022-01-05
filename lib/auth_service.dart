@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:ff/Coach.dart';
 import 'package:ff/Coachsetter.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
 
 
 class AuthService {
@@ -29,26 +30,24 @@ class AuthService {
     print(_auth.currentUser);
     return _auth.signOut();
   }
-  // Future<void> getCoaches() async{
-  //   var _instance = FirebaseFirestore.instance;
-  //   CollectionReference c =  _instance!.collection('coach');
-  //   DocumentSnapshot snapshot = await c.doc().get();
-  //   var data = snapshot.data() as Map;
-  // snapshot.data().f
-  // }
 
 
 }
-// getCoach(Coachsetter co ) async{
-//   QuerySnapshot snapshot= (await FirebaseFirestore.instance.collection("coach").doc().get()) as QuerySnapshot<Object?>;
+// CollectionReference _collectionRef =
+// FirebaseFirestore.instance.collection('coach');
 //
-//   List<Coach> _coachlist = [];
-//   snapshot.docs.forEach((documents) {
-//     Coach coach = Coach.fromMap(documents);
-//     _coachlist.add(coach);
+// Future<void> getcoach(Coachsetter ca) async {
+//   // Get docs from collection reference
+//   QuerySnapshot querySnapshot = await _collectionRef.get();
+//
+//   // Get data from docs and convert map to List
+//   final allData = querySnapshot.docs.map((doc) => doc.data()).toList();
+//   List<Coach> _coachList = [];
+//   print(allData);
+//   allData.forEach((element) {
+//     print(element);
+//     // Map<dynamic, dynamic> result = element.get();
+//     // _coachList.add(Coach.fromMap(result));
 //   });
-//   co.coachList = _coachlist;
+//   ca.coachList = _coachList;
 // }
-
-
-

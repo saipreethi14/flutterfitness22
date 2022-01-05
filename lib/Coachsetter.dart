@@ -6,7 +6,7 @@ import 'package:ff/Coach.dart';
 import 'package:flutter/cupertino.dart';
 
 class Coachsetter with ChangeNotifier{
-  static List<Coach> _coachList =[];
+  List<Coach> _coachList =[];
   late Coach _currentCoach;
 
   UnmodifiableListView<Coach> get coachList => UnmodifiableListView(_coachList);
