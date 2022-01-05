@@ -11,14 +11,18 @@ class Gender1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: otp,
-      child: Container(
-        height: 140,
-        width: 130,
-        child: customChild,
-        margin: EdgeInsets.all(15.0),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(15.0),
-          color: contColor,
+      child: Padding(
+        padding: const EdgeInsets.only(left:5.0, right:5),
+        child: Center(
+          child: Container(
+            height: 140,
+            width: 130,
+            child: customChild,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(15.0),
+              color: contColor,
+            ),
+          ),
         ),
       ),
     );
