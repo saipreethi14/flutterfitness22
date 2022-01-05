@@ -320,14 +320,14 @@ class _bmiState extends State<bmi> {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        'Bad',style: TextStyle(
+                        'Over Weight',style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 22),),
                     ),
                     style: TextButton.styleFrom(
                       primary: Colors.black,
                       backgroundColor: Colors.grey,
-                      fixedSize: Size.fromWidth(160),
+                      // fixedSize: Size.fromWidth(160),
                     ),
                   ),
                 ),
