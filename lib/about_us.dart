@@ -39,14 +39,15 @@ class _AboutUsState extends State<AboutUs> {
                 child: Padding(
                   padding: const EdgeInsets.only(top:10.0, right: 1.0, left: 10.0),
                   child: Text('We are continuously trying to improve our work to provide the user an awesome experience. Our goal is to give better and relevant experience to our customers.', style: TextStyle(
-                    fontSize: 17,
-                    fontWeight: FontWeight.bold,
+                    fontSize: 16,
+                    // fontWeight: FontWeight.bold,
                     color: Colors.black,
                     fontStyle: FontStyle.italic,
                     // fontFamily: 'MonteCarlo',
                   ),),
                 ),
               ),
+              SizedBox(height: 10,),
               Container(
                 height: 380,
                 color: Colors.grey,
@@ -58,7 +59,7 @@ class _AboutUsState extends State<AboutUs> {
                       padding: const EdgeInsets.all(15.0),
                       child: Container(
                         height: 330,
-                        width: 350,
+                        width: 330,
                         decoration: BoxDecoration(
                           color: Colors.black26,
                           borderRadius: BorderRadius.circular(60),
@@ -104,7 +105,7 @@ class _AboutUsState extends State<AboutUs> {
                       padding: const EdgeInsets.all(15.0),
                       child: Container(
                         height: 330,
-                        width: 350,
+                        width: 330,
                         decoration: BoxDecoration(
                           color: Colors.black26,
                           borderRadius: BorderRadius.circular(50),
@@ -149,7 +150,7 @@ class _AboutUsState extends State<AboutUs> {
                       padding: const EdgeInsets.all(15.0),
                       child: Container(
                         height: 330,
-                        width: 350,
+                        width: 330,
                         decoration: BoxDecoration(
                           color: Colors.black26,
                           borderRadius: BorderRadius.circular(60),
@@ -194,7 +195,7 @@ class _AboutUsState extends State<AboutUs> {
                       padding: const EdgeInsets.all(15.0),
                       child: Container(
                         height: 330,
-                        width: 350,
+                        width: 330,
                         decoration: BoxDecoration(
                           color: Colors.black26,
                           borderRadius: BorderRadius.circular(60),
