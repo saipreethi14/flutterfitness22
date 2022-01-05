@@ -13,7 +13,7 @@ class Gender1 extends StatelessWidget {
       onTap: otp,
       child: Container(
         height: 140,
-        width: 170,
+        width: 130,
         child: customChild,
         margin: EdgeInsets.all(15.0),
         decoration: BoxDecoration(
