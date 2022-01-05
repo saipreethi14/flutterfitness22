@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:ff/HomePage.dart';
 
 class AboutUs extends StatefulWidget {
   const AboutUs({Key? key}) : super(key: key);
@@ -14,12 +15,16 @@ class _AboutUsState extends State<AboutUs> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          leading: Icon(Icons.menu),
-          title: Text('About Us', style: TextStyle(
-            fontSize: 22,
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
-          ),),
+          backgroundColor: Colors.black,
+          title: Row(
+            children: <Widget> [
+              Text('About Us', style: TextStyle(
+                fontSize: 22,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),),
+            ],
+          ),
         ),
         body: SafeArea(
           child: Column(
@@ -39,7 +44,7 @@ class _AboutUsState extends State<AboutUs> {
                 child: Padding(
                   padding: const EdgeInsets.only(top:10.0, right: 1.0, left: 10.0),
                   child: Text('We are continuously trying to improve our work to provide the user an awesome experience. Our goal is to give better and relevant experience to our customers.', style: TextStyle(
-                    fontSize: 16,
+                    fontSize: 15,
                     // fontWeight: FontWeight.bold,
                     color: Colors.black,
                     fontStyle: FontStyle.italic,
@@ -47,7 +52,7 @@ class _AboutUsState extends State<AboutUs> {
                   ),),
                 ),
               ),
-              SizedBox(height: 10,),
+              SizedBox(height: 20,),
               Container(
                 height: 380,
                 color: Colors.grey,
@@ -73,13 +78,13 @@ class _AboutUsState extends State<AboutUs> {
                                 backgroundImage: NetworkImage('https://www.nicepng.com/png/detail/258-2587185_kanchan-professional-young-woman-png.png'),
                               ),
                             ),
-                            Text('Abcde', style: TextStyle(
+                            Text('Saipreethi', style: TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
                               color: Colors.black,
                               fontStyle: FontStyle.italic,
                             ),),
-                            Text('12345', style: TextStyle(
+                            Text('2092933', style: TextStyle(
                                 fontSize: 22,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black,
@@ -119,13 +124,13 @@ class _AboutUsState extends State<AboutUs> {
                                 backgroundImage: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQyO41XHnhQ30L8YgqmGaJ85h2sHalqtAsOw&usqp=CAU'),
                               ),
                             ),
-                            Text('Abcde', style: TextStyle(
+                            Text('Jatinder', style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black,
                                 fontStyle: FontStyle.italic
                             ),),
-                            Text('12345', style: TextStyle(
+                            Text('2092193', style: TextStyle(
                                 fontSize: 22,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black,
@@ -164,13 +169,13 @@ class _AboutUsState extends State<AboutUs> {
                                 backgroundImage: NetworkImage('https://img.favpng.com/9/19/21/businessperson-company-leadership-image-sales-png-favpng-yVH49h629HvJ6vg55yttGkbqv.jpg'),
                               ),
                             ),
-                            Text('Abcde', style: TextStyle(
+                            Text('Praveen', style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black,
                                 fontStyle: FontStyle.italic
                             ),),
-                            Text('12345', style: TextStyle(
+                            Text('2092164', style: TextStyle(
                                 fontSize: 22,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black,
@@ -209,13 +214,13 @@ class _AboutUsState extends State<AboutUs> {
                                 backgroundImage: NetworkImage('https://pinnacletekeducator.com/wp-content/uploads/2021/05/depositphotos_12485614-stock-photo-asian-businesswoman-with-tablet-computer.jpg'),
                               ),
                             ),
-                            Text('Abcde', style: TextStyle(
+                            Text('Manpreet', style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black,
                                 fontStyle: FontStyle.italic
                             ),),
-                            Text('12345', style: TextStyle(
+                            Text('2092039', style: TextStyle(
                                 fontSize: 22,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black,
