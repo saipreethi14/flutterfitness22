@@ -29,8 +29,8 @@ class _underWeightState extends State<underWeight> {
                 },
                 child:  Icon(Icons.arrow_back),
                 style: TextButton.styleFrom(
-                  primary: Colors.black,
-                  backgroundColor: Colors.grey,
+                  primary: Colors.white,
+                  backgroundColor: Colors.transparent,
                 ),
               ),
             ],

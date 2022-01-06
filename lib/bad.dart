@@ -12,7 +12,9 @@ class _badState extends State<bad> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor:Colors.white,
         appBar: AppBar(
           backgroundColor: Colors.black,
           title:
@@ -28,8 +30,8 @@ class _badState extends State<bad> {
                 },
                 child:  Icon(Icons.arrow_back),
                 style: TextButton.styleFrom(
-                  primary: Colors.black,
-                  backgroundColor: Colors.grey,
+                  primary: Colors.white,
+                  backgroundColor: Colors.transparent,
                 ),
               ),
             ],

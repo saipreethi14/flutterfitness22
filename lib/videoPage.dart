@@ -1,3 +1,5 @@
+import 'package:ff/HomePage.dart';
+
 import 'video_items.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
@@ -11,6 +13,13 @@ class videoPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.black87,
         automaticallyImplyLeading: false,
+
+        leading: IconButton(
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (Context) => Homepage()));
+          },
+          icon: Icon(Icons.arrow_back_ios_new_rounded),
+        ),
         title: Text('Exercise video player'),
         centerTitle: true,
       ),
