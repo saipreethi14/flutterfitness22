@@ -21,18 +21,7 @@ class _underWeightState extends State<underWeight> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text("Foods to gain Weight"),
-              TextButton(
-                onPressed: (){
-                  setState(() {
-                    Navigator.push(context, MaterialPageRoute(builder: (Context) => bmi()));
-                  });
-                },
-                child:  Icon(Icons.arrow_back),
-                style: TextButton.styleFrom(
-                  primary: Colors.white,
-                  backgroundColor: Colors.transparent,
-                ),
-              ),
+
             ],
           ),
         ),

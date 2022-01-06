@@ -1,4 +1,5 @@
 
+import 'package:ff/HomePage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -55,13 +56,12 @@ class _bmiState extends State<bmi> {
           title:
           Row(
             children:<Widget> [
-              // TextButton(
-              //     onPressed: (){
-              //       setState(() {
-              //
-              //       });
-              //     },
-              //     child: Icon(Icons.arrow_back, color: Colors.white,)),
+              // IconButton(
+              //   onPressed: () {
+              //     Navigator.push(context, MaterialPageRoute(builder: (Context) => Homepage()));
+              //   },
+              //   icon: Icon(Icons.arrow_back_ios_new_rounded),
+              // ),
               Text('BMI Calculator', style: TextStyle(
                 fontSize: 22,
                 fontWeight: FontWeight.bold,

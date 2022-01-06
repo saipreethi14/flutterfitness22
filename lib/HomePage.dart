@@ -70,6 +70,7 @@ class _InputPageState extends State<Homepage> {
                     onPress: () {
                       setState(() {
                         Navigator.push(context, MaterialPageRoute(builder: (Context) => bmi()));
+
                       });
                     },
                     cardChild: ImageContent(

@@ -18,24 +18,7 @@ class _badState extends State<bad> {
         appBar: AppBar(
           backgroundColor: Colors.black,
           title:
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
               Text("Filling foods for Weight loss"),
-              TextButton(
-                onPressed: (){
-                  setState(() {
-                    Navigator.push(context, MaterialPageRoute(builder: (Context) => bmi()));
-                  });
-                },
-                child:  Icon(Icons.arrow_back),
-                style: TextButton.styleFrom(
-                  primary: Colors.white,
-                  backgroundColor: Colors.transparent,
-                ),
-              ),
-            ],
-          ),
         ),
         body: SafeArea(
           child: ListView(
