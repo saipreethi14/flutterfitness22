@@ -77,6 +77,7 @@ class _CoachDataState extends State<CoachData> {
        title: Text(
          "Coach Data"
        ),
+       backgroundColor: Colors.black,
        actions: <Widget>[
          IconButton(
            onPressed: () {

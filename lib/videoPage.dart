@@ -16,11 +16,30 @@ class videoPage extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.fromLTRB(0,20.0,0,0),
+            child: Center(
+              child: Text('1.Ab Wheel Exercise',style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+                fontStyle: FontStyle.italic,
+              ),),
+            ),
+          ),
           VideoItems(
             videoPlayerController: VideoPlayerController.network(
                 'https://thumbs.dreamstime.com/videothumb_large12766/127668320.mp4'),
             looping: false,
             autoplay: true,
+          ),
+          Center(
+            child: Text('2.Sitting Ab Wheel',style: TextStyle(
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+              fontStyle: FontStyle.italic,
+            ),),
           ),
           VideoItems(
             videoPlayerController: VideoPlayerController.network(
@@ -28,17 +47,41 @@ class videoPage extends StatelessWidget {
             looping: false,
             autoplay: true,
           ),
+          Center(
+            child: Text('3.Leg Raise',style: TextStyle(
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+              fontStyle: FontStyle.italic,
+            ),),
+          ),
           VideoItems(
             videoPlayerController: VideoPlayerController.network(
                 'https://thumbs.dreamstime.com/videothumb_large12766/127668320.mp4'),
             looping: false,
             autoplay: true,
           ),
+          Center(
+            child: Text('4.Straight Leg Raises',style: TextStyle(
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+              fontStyle: FontStyle.italic,
+            ),),
+          ),
           VideoItems(
             videoPlayerController: VideoPlayerController.network(
                 'https://thumbs.dreamstime.com/videothumb_large12720/127200181.mp4'),
             looping: false,
             autoplay: true,
+          ),
+          Center(
+            child: Text('5.Plank',style: TextStyle(
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+              fontStyle: FontStyle.italic,
+            ),),
           ),
           VideoItems(
             videoPlayerController: VideoPlayerController.network(
