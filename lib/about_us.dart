@@ -14,12 +14,14 @@ class _AboutUsState extends State<AboutUs> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFFEBD3D4),
         appBar: AppBar(
-          backgroundColor: Colors.black,
+          backgroundColor: Color(0xFF660000),
           title: Row(
             children: <Widget> [
               Text('About Us', style: TextStyle(
                 fontSize: 22,
+                fontFamily: 'Aleo',
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),),
@@ -27,16 +29,17 @@ class _AboutUsState extends State<AboutUs> {
           ),
         ),
         body: SafeArea(
+
           child: Column(
             children: <Widget> [
               Center(
                 child: Padding(
                   padding: const EdgeInsets.only(top: 10.0),
                   child: Text('Our Team', style: TextStyle(
-                    fontSize: 60,
+                    fontSize: 40,
                     fontWeight: FontWeight.bold,
                     color: Colors.black,
-                    fontFamily: 'MonteCarlo',
+                    fontFamily: 'Aleo',
                   ),),
                 ),
               ),
@@ -48,14 +51,14 @@ class _AboutUsState extends State<AboutUs> {
                     // fontWeight: FontWeight.bold,
                     color: Colors.black,
                     fontStyle: FontStyle.italic,
-                    // fontFamily: 'MonteCarlo',
+                     fontFamily: 'Aleo',
                   ),),
                 ),
               ),
               SizedBox(height: 20,),
               Container(
                 height: 430,
-                color: Colors.grey,
+                color: Color(0xFFEBD3D4),
                 margin: const EdgeInsets.symmetric(vertical: 10.0),
                 child: ListView(
                   scrollDirection: Axis.horizontal,
@@ -66,7 +69,7 @@ class _AboutUsState extends State<AboutUs> {
                         height: 330,
                         width: 330,
                         decoration: BoxDecoration(
-                          color: Colors.black26,
+                          color: Color(0xFF660000),
                           borderRadius: BorderRadius.circular(60),
                         ),
                         child: Column(
@@ -80,14 +83,16 @@ class _AboutUsState extends State<AboutUs> {
                             ),
                             Text('Saipreethi', style: TextStyle(
                               fontSize: 20,
+                              fontFamily: 'Aleo',
                               fontWeight: FontWeight.bold,
-                              color: Colors.black,
+                              color: Colors.white,
                               fontStyle: FontStyle.italic,
                             ),),
                             Text('2092933', style: TextStyle(
                                 fontSize: 22,
+                                fontFamily: 'Aleo',
                                 fontWeight: FontWeight.bold,
-                                color: Colors.black,
+                                color: Colors.white,
                                 fontStyle: FontStyle.italic
                             ),),
                             Padding(
@@ -95,7 +100,8 @@ class _AboutUsState extends State<AboutUs> {
                               child: Center(
                                 child: Text('"I value a team environment because talking things out, leaning on each other, and working collaboratively are so crucial to anyone success ". ', style: TextStyle(
                                   fontSize: 16,
-                                  color: Colors.black,
+                                  fontFamily: 'Aleo',
+                                  color: Colors.white,
                                   fontStyle: FontStyle.italic,
                                   // fontStyle: FontStyle.italic,
                                 ),),
@@ -112,7 +118,7 @@ class _AboutUsState extends State<AboutUs> {
                         height: 330,
                         width: 330,
                         decoration: BoxDecoration(
-                          color: Colors.black26,
+                          color: Colors.lightGreen,
                           borderRadius: BorderRadius.circular(50),
                         ),
                         child: Column(
@@ -126,12 +132,14 @@ class _AboutUsState extends State<AboutUs> {
                             ),
                             Text('Jatinder', style: TextStyle(
                                 fontSize: 20,
+                                fontFamily: 'Aleo',
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black,
                                 fontStyle: FontStyle.italic
                             ),),
                             Text('2092193', style: TextStyle(
                                 fontSize: 22,
+                                fontFamily: 'Aleo',
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black,
                                 fontStyle: FontStyle.italic
@@ -141,6 +149,7 @@ class _AboutUsState extends State<AboutUs> {
                               child: Center(
                                 child: Text('"All in all, I know the importance of a team, and I work very well in a collaborative environment". ', style: TextStyle(
                                   fontSize: 16,
+                                  fontFamily: 'Aleo',
                                   color: Colors.black,
                                   fontStyle: FontStyle.italic,
                                 ),),
@@ -157,7 +166,7 @@ class _AboutUsState extends State<AboutUs> {
                         height: 330,
                         width: 330,
                         decoration: BoxDecoration(
-                          color: Colors.black26,
+                          color: Colors.lightGreen,
                           borderRadius: BorderRadius.circular(60),
                         ),
                         child: Column(
@@ -171,12 +180,14 @@ class _AboutUsState extends State<AboutUs> {
                             ),
                             Text('Praveen', style: TextStyle(
                                 fontSize: 20,
+                                fontFamily: 'Aleo',
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black,
                                 fontStyle: FontStyle.italic
                             ),),
                             Text('2092164', style: TextStyle(
                                 fontSize: 22,
+                                fontFamily: 'Aleo',
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black,
                                 fontStyle: FontStyle.italic
@@ -186,6 +197,7 @@ class _AboutUsState extends State<AboutUs> {
                               child: Center(
                                 child: Text('"I value a team environment because talking things out, leaning on each other, and working collaboratively are so crucial to anyone success ". ', style: TextStyle(
                                   fontSize: 16,
+                                  fontFamily: 'Aleo',
                                   fontStyle: FontStyle.italic,
                                   color: Colors.black,
                                 ),),
@@ -202,7 +214,7 @@ class _AboutUsState extends State<AboutUs> {
                         height: 330,
                         width: 330,
                         decoration: BoxDecoration(
-                          color: Colors.black26,
+                          color: Colors.lightGreen,
                           borderRadius: BorderRadius.circular(60),
                         ),
                         child: Column(
@@ -216,12 +228,14 @@ class _AboutUsState extends State<AboutUs> {
                             ),
                             Text('Manpreet', style: TextStyle(
                                 fontSize: 20,
+                                fontFamily: 'Aleo',
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black,
                                 fontStyle: FontStyle.italic
                             ),),
                             Text('2092039', style: TextStyle(
                                 fontSize: 22,
+                                fontFamily: 'Aleo',
                                 fontWeight: FontWeight.bold,
                                 color: Colors.black,
                                 fontStyle: FontStyle.italic
@@ -231,6 +245,7 @@ class _AboutUsState extends State<AboutUs> {
                               child: Center(
                                 child: Text('"I value a team environment because talking things out, leaning on each other, and working collaboratively are so crucial to anyone success". ', style: TextStyle(
                                   fontSize: 16,
+                                  fontFamily: 'Aleo',
                                   color: Colors.black,
                                   fontStyle: FontStyle.italic,
                                 ),),

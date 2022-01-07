@@ -18,12 +18,13 @@ class Exercisedetailspage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFFEBD3D4),
       appBar: AppBar(
         title: Text(
           'Exercise Details',
           style: TextStyle(fontFamily: 'Aleo',fontWeight: FontWeight.bold),
         ),
-        backgroundColor: Colors.black,
+        backgroundColor: Color(0xFF660000),
       ),
       body: Column(
         children: <Widget>[
@@ -33,7 +34,7 @@ class Exercisedetailspage extends StatelessWidget {
             width: 450,
             height: 395,
             decoration: BoxDecoration(
-              color: Colors.black87,
+              color: Color(0xFF660000),
               borderRadius: BorderRadius.circular(15),
             ),
             child: Align(

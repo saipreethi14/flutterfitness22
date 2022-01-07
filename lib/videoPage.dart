@@ -9,9 +9,9 @@ class videoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[100],
+      backgroundColor: Color(0xFFEBD3D4),
       appBar: AppBar(
-        backgroundColor: Colors.black87,
+        backgroundColor: Color(0xFF660000),
         automaticallyImplyLeading: false,
 
         leading: IconButton(

@@ -15,10 +15,15 @@ enum Gender {
   female,
 }
 Gender selectedGender = Gender.male;
-
+const kShrinePink50 = Color(0xFFFEEAE6);
 const activeColor = Color(0xFFBDBDBD);
 const inactiveColor = Color(0xFFFFFFFF);
-
+const kShrinePink300 = Color(0xFFFBB8AC);
+const kpurplr = Color(0xFF762141);
+const color1 = Color(0xFFDF97BB);
+const color2 = Color(0xFF660000);
+const back2 = Color(0xFFEBD3D4);
+const back3 = Color(0xFFDCC6C7);
 const maleColor = inactiveColor;
 const femaleColor = inactiveColor;
 
@@ -50,9 +55,9 @@ class _bmiState extends State<bmi> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Color(0xFFEBD3D4),
       appBar: AppBar(
-          backgroundColor: Colors.black,
+          backgroundColor: Color(0xFF660000),
           title:
           Row(
             children:<Widget> [
@@ -75,11 +80,13 @@ class _bmiState extends State<bmi> {
           children: <Widget> [
             Padding(
               padding: const EdgeInsets.only(top: 30.0, bottom: 30.0, left: 8.0),
-              child: Text('Calculate your BMI', style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
-                color: Colors.white70,
-              ),),
+              child: Center(
+                child: Text('Calculate your BMI', style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),),
+              ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),

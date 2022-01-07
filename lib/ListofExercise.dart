@@ -17,10 +17,10 @@ class _ListofExerciseState extends State<ListofExercise>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[400],
+      backgroundColor: Color(0xFFEBD3D4),
 
       appBar: AppBar(
-          backgroundColor: Colors.black,
+          backgroundColor: Color(0xFF660000),
           title:
           Row(
             children:<Widget> [

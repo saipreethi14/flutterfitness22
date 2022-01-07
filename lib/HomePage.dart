@@ -26,13 +26,13 @@ class _InputPageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[400],
+      backgroundColor: Color(0xFFEBD3D4),
         appBar: AppBar(
           leading: IconButton(
             onPressed: () {},
             icon: Icon(Icons.fitness_center),
           ),
-          title: Text('GET SET GO'),
+          title: Text('GET SET GO',style: TextStyle(fontFamily: 'Aleo',fontWeight: FontWeight.bold),),
           actions: [
             IconButton(
               onPressed: () {
@@ -42,7 +42,7 @@ class _InputPageState extends State<Homepage> {
               icon: Icon(Icons.logout),
             ),
           ],
-          backgroundColor: Colors.black,
+          backgroundColor: Color(0xFF660000),
 
         ),
         body: Column(children: <Widget>[

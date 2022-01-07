@@ -73,11 +73,12 @@ class _CoachDataState extends State<CoachData> {
 
    
    return Scaffold(
+       backgroundColor:Color(0xFFEBD3D4),
      appBar: AppBar(
        title: Text(
-         "Coach Data"
+         "Coach Data", style: TextStyle(fontWeight: FontWeight.bold,fontFamily: 'Aleo'),
        ),
-       backgroundColor: Colors.black,
+       backgroundColor: Color(0xFF660000),
        actions: <Widget>[
          IconButton(
            onPressed: () {
