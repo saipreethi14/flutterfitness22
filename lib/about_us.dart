@@ -44,7 +44,7 @@ class _AboutUsState extends State<AboutUs> {
                 child: Padding(
                   padding: const EdgeInsets.only(top:10.0, right: 1.0, left: 10.0),
                   child: Text('We are continuously trying to improve our work to provide the user an awesome experience. Our goal is to give better and relevant experience to our customers.', style: TextStyle(
-                    fontSize: 15,
+                    fontSize: 18,
                     // fontWeight: FontWeight.bold,
                     color: Colors.black,
                     fontStyle: FontStyle.italic,
@@ -54,7 +54,7 @@ class _AboutUsState extends State<AboutUs> {
               ),
               SizedBox(height: 20,),
               Container(
-                height: 380,
+                height: 430,
                 color: Colors.grey,
                 margin: const EdgeInsets.symmetric(vertical: 10.0),
                 child: ListView(

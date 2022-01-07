@@ -71,10 +71,10 @@ ListView _buildListView(BuildContext context) {
       itemBuilder: (_, index) {
         return ResusableCard(
           onPress: () {
-            Navigator.push(
-                context,
+             Navigator.push(
+                 context,
                 MaterialPageRoute(
-                    builder: (Context) => Exercisedetailspage(index)));},
+                   builder: (Context) => Exercisedetailspage(index)));},
           cardChild: ImageContent(
             img1: Image.asset('images/L$index.jpg',
                 height: 200, fit: BoxFit.fill),

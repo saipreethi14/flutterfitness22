@@ -31,7 +31,7 @@ class Exercisedetailspage extends StatelessWidget {
           Container(
             padding: EdgeInsets.all(5),
             width: 450,
-            height: 310,
+            height: 395,
             decoration: BoxDecoration(
               color: Colors.black87,
               borderRadius: BorderRadius.circular(15),
