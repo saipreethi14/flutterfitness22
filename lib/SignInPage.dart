@@ -42,7 +42,7 @@ class _SignInPageState extends State<SignInPage> {
         child: Column(
           children: <Widget>[
             Padding(
-              padding: EdgeInsets.all(20),
+              padding: EdgeInsets.all(12),
               child: TextField(
                 controller: emailController,
                 decoration: InputDecoration(
@@ -53,7 +53,7 @@ class _SignInPageState extends State<SignInPage> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.all(20),
+              padding: EdgeInsets.all(12),
               child: TextField(
                 controller: passwordController,
                 obscureText: true,
@@ -64,7 +64,7 @@ class _SignInPageState extends State<SignInPage> {
                 ),
               ),
             ),
-            SizedBox(height: 10),
+            SizedBox(height: 8),
             Container(
                 height: 45,
                 padding: EdgeInsets.fromLTRB(10, 0, 10, 0),

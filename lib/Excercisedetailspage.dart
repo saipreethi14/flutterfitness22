@@ -20,8 +20,8 @@ class Exercisedetailspage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'EXERCISE DETAILS',
-          style: TextStyle(fontFamily: 'Aleo'),
+          'Exercise Details',
+          style: TextStyle(fontFamily: 'Aleo',fontWeight: FontWeight.bold),
         ),
         backgroundColor: Colors.black,
       ),

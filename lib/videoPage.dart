@@ -25,21 +25,18 @@ class videoPage extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.fromLTRB(0,20.0,0,0),
-            child: Center(
-              child: Text('1.Ab Wheel Exercise',style: TextStyle(
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-                fontStyle: FontStyle.italic,
-              ),),
-            ),
+          Center(
+            child: Text('1.Ab Wheel Exercise',style: TextStyle(
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+              fontStyle: FontStyle.italic,
+            ),),
           ),
           VideoItems(
             videoPlayerController: VideoPlayerController.network(
-                'https://thumbs.dreamstime.com/videothumb_large12766/127668320.mp4'),
-            looping: false,
+          'https://assets.mixkit.co/videos/preview/mixkit-man-doing-plank-exercise-in-his-living-room-36813-large.mp4'),
+            looping: true,
             autoplay: true,
           ),
           Center(
@@ -52,8 +49,8 @@ class videoPage extends StatelessWidget {
           ),
           VideoItems(
             videoPlayerController: VideoPlayerController.network(
-                'https://thumbs.dreamstime.com/videothumb_large12720/127202515.mp4'),
-            looping: false,
+                'https://assets.mixkit.co/videos/preview/mixkit-young-man-exercising-5668-large.mp4'),
+            looping: true,
             autoplay: true,
           ),
           Center(
@@ -66,8 +63,8 @@ class videoPage extends StatelessWidget {
           ),
           VideoItems(
             videoPlayerController: VideoPlayerController.network(
-                'https://thumbs.dreamstime.com/videothumb_large12766/127668320.mp4'),
-            looping: false,
+                'https://assets.mixkit.co/videos/preview/mixkit-a-trainer-helps-a-woman-with-the-squats-training-23914-large.mp4'),
+            looping: true,
             autoplay: true,
           ),
           Center(
@@ -80,8 +77,8 @@ class videoPage extends StatelessWidget {
           ),
           VideoItems(
             videoPlayerController: VideoPlayerController.network(
-                'https://thumbs.dreamstime.com/videothumb_large12720/127200181.mp4'),
-            looping: false,
+                'https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/Sx6dK9lQiok4v2i0/videoblocks-fit-young-man-doing-hanging-leg-raises-exercise-on-horizontal-bar-in-the-street-gym_s_c3hgf1l__f2489b9b8dc3b03e8864aff79887b169__P360.mp4'),
+            looping: true,
             autoplay: true,
           ),
           Center(
@@ -94,7 +91,7 @@ class videoPage extends StatelessWidget {
           ),
           VideoItems(
             videoPlayerController: VideoPlayerController.network(
-                'https://thumbs.dreamstime.com/videothumb_large12720/127201753.mp4'),
+                'https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/Sx6dK9lQiok4v2i0/videoblocks-a-bodybuilder-in-blue-shorts-stands-in-a-side-plank-on-a-sports-mat-and-swing-legs-at-the-city-stadium-front-view-close-up-blurred-background-man-uses-mobile-app-on-his-phone-for-training_bbo9wudsv__52d0de3a97c478a63929f8b9120fccf9__P360.mp4'),
             looping: true,
             autoplay: true,
           ),
