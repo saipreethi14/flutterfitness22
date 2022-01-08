@@ -12,7 +12,7 @@ class PlusMinus extends StatelessWidget {
     return RawMaterialButton(
       child: Icon(icon),
       onPressed: onPress,
-      fillColor: Colors.white,
+      fillColor: Color(0xFFEBD3D4),
       constraints: BoxConstraints.tightFor(
         width: 44.0,
         height: 44.0,

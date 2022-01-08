@@ -32,7 +32,7 @@ class _InputPageState extends State<Homepage> {
             onPressed: () {},
             icon: Icon(Icons.fitness_center),
           ),
-          title: Text('GET SET GO',style: TextStyle(fontFamily: 'Aleo',fontWeight: FontWeight.bold),),
+          title: Text('GET SET GO',style: TextStyle(fontFamily: 'Aleo',fontWeight: FontWeight.bold,fontSize: 22),),
           actions: [
             IconButton(
               onPressed: () {

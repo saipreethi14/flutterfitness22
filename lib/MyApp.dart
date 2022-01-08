@@ -37,7 +37,8 @@ class _MyHomeState extends State<MyApp1> {
     final isLogin = _token != null && _profile != null;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Login via Facebook '),
+        title: const Text('Login via Facebook ',style: TextStyle(fontFamily: 'Aleo'),),
+        backgroundColor:  Color(0xFF660000),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 18.0, horizontal: 8.0),
@@ -52,8 +53,9 @@ class _MyHomeState extends State<MyApp1> {
 
                 ),
               if(isLogin && FacebookLoginStatus != FacebookLoginStatus.cancel)
-                Padding(padding: EdgeInsets.all(10),
+                Padding(padding: EdgeInsets.all(30),
                 child: FlatButton(
+
                   child: Text('Login'),
                   onPressed: () {
                     Navigator.push(context, MaterialPageRoute(builder: (Context) => Homepage()));

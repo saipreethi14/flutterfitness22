@@ -16,7 +16,7 @@ enum Gender {
 }
 Gender selectedGender = Gender.male;
 const kShrinePink50 = Color(0xFFFEEAE6);
-const activeColor = Color(0xFFBDBDBD);
+const activeColor = Color(0xFF660000);
 const inactiveColor = Color(0xFFFFFFFF);
 const kShrinePink300 = Color(0xFFFBB8AC);
 const kpurplr = Color(0xFF762141);
@@ -69,6 +69,7 @@ class _bmiState extends State<bmi> {
               // ),
               Text('BMI Calculator', style: TextStyle(
                 fontSize: 22,
+                fontFamily: 'Aleo',
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),),
@@ -83,8 +84,9 @@ class _bmiState extends State<bmi> {
               child: Center(
                 child: Text('Calculate your BMI', style: TextStyle(
                   fontSize: 30,
+                  fontFamily: 'Aleo',
                   fontWeight: FontWeight.bold,
-                  color: Colors.black,
+                  color: Color(0xFF660000),
                 ),),
               ),
             ),
@@ -93,7 +95,7 @@ class _bmiState extends State<bmi> {
               child: Container(
                 height: 150,
                 decoration: BoxDecoration(
-                  color: Colors.grey[400],
+                  color: Colors.white,
                     borderRadius: BorderRadius.all(Radius.circular(20))),
 
 
@@ -104,6 +106,7 @@ class _bmiState extends State<bmi> {
                       padding: const EdgeInsets.all(20.0),
                       child: Text('Result ', style: TextStyle(
                         fontSize: 30,
+                        fontFamily: 'Aleo',
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                       ),),
@@ -120,6 +123,7 @@ class _bmiState extends State<bmi> {
                       customChild1: Center(
                         child: Text(comment, style: TextStyle(
                           fontSize: 15,
+                          fontFamily: 'Aleo',
                           fontWeight: FontWeight.bold,
                           color: Colors.black,
                         ),),
@@ -151,6 +155,7 @@ class _bmiState extends State<bmi> {
                             SizedBox(height: 10.0),
                             Text('Male', style: TextStyle(
                               fontSize: 20,
+                              fontFamily: 'Aleo',
                               fontWeight: FontWeight.bold,
                               color: Colors.black,
                             ),),
@@ -176,6 +181,7 @@ class _bmiState extends State<bmi> {
                             SizedBox(height: 10.0),
                             Text('Female', style: TextStyle(
                               fontSize: 20,
+                              fontFamily: 'Aleo',
                               fontWeight: FontWeight.bold,
                               color: Colors.black,
                             ),),
@@ -198,14 +204,14 @@ class _bmiState extends State<bmi> {
                 obscureText: false,
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: Colors.grey[400],
+                  fillColor: Colors.white,
                   focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.white, width: 5.0),
+                    borderSide: BorderSide(color: Color(0xFF660000), width: 5.0),
                   ),
                   border: OutlineInputBorder(),
                   labelText: 'Height in cm',
                   labelStyle: TextStyle(
-                    color: Colors.black,
+                    color: Color(0xFF660000),
                     fontSize: 18,
                   ),
                   hintText: 'Enter your height',
@@ -224,14 +230,14 @@ class _bmiState extends State<bmi> {
                 obscureText: false,
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: Colors.grey[400],
+                  fillColor: Colors.white,
                   focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.white, width: 5.0),
+                    borderSide: BorderSide(color: Color(0xFF660000), width: 5.0),
                   ),
                   border: OutlineInputBorder(),
                   labelText: 'Weight in kg',
                   labelStyle: TextStyle(
-                    color: Colors.black,
+                    color: Color(0xFF660000),
                     fontSize: 18,
                   ),
                   hintText: 'Enter your weight',
@@ -244,7 +250,7 @@ class _bmiState extends State<bmi> {
                 height: 130,
                 width: double.infinity,
                 decoration: BoxDecoration(
-                  color: Colors.grey[400],
+                  color: Colors.white,
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                 ),
 
@@ -255,6 +261,7 @@ class _bmiState extends State<bmi> {
                         padding: const EdgeInsets.all(8.0),
                         child: Text('Age', style: TextStyle(
                           fontSize: 18,
+                          fontFamily: 'Aleo',
                           fontWeight: FontWeight.bold,
                           color: Colors.black,
                         ),),
@@ -323,18 +330,19 @@ class _bmiState extends State<bmi> {
                     children: <Widget>[
                       Center(child: Text('Calculate', style: TextStyle(
                         fontWeight: FontWeight.bold,
+                        fontFamily: 'Aleo',
                         fontSize: 22,
                       ),)),
-                      Center(child: Text('BMI', style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 22)),),
+                      // Center(child: Text('BMI', style: TextStyle(
+                      //     fontWeight: FontWeight.bold,
+                      //     fontSize: 22)),),
                     ],
                   ),
                   style: TextButton.styleFrom(
                     fixedSize: Size.fromWidth(400),
-                    primary: Colors.black,
+                    primary: Colors.white,
                     onSurface: Colors.red,
-                    backgroundColor: Colors.grey[400],
+                    backgroundColor: Color(0xFF660000),
                   ),
                 ),
               ),
@@ -354,12 +362,13 @@ class _bmiState extends State<bmi> {
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
                         'Over Weight',style: TextStyle(
+                          fontFamily: 'Aleo',
                           fontWeight: FontWeight.bold,
-                          fontSize: 22),),
+                          fontSize: 20),),
                     ),
                     style: TextButton.styleFrom(
-                      primary: Colors.black,
-                      backgroundColor: Colors.grey[400],
+                      primary: Colors.white,
+                      backgroundColor: Color(0xFF660000),
                       // fixedSize: Size.fromWidth(160),
                     ),
                   ),
@@ -378,12 +387,13 @@ class _bmiState extends State<bmi> {
                       child: Text(
                         'Under Weight',style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: 22),),
+                          fontFamily: 'Aleo',
+                          fontSize: 20),),
                     ),
                     style: TextButton.styleFrom(
                       // fixedSize: Size.fromWidth(80),
-                      primary: Colors.black,
-                      backgroundColor: Colors.grey[400],
+                      primary: Colors.white,
+                      backgroundColor: Color(0xFF660000),
                     ),
                   ),
                 ),

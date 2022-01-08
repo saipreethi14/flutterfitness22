@@ -1,7 +1,9 @@
 import 'package:ff/HomePage.dart';
 import 'package:ff/main.dart';
+import 'package:ff/under_weight.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_login_facebook/flutter_login_facebook.dart';
 import 'MyApp.dart';
@@ -22,20 +24,20 @@ class _SignInPageState extends State<SignInPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: Color(0xFFEBD3D4),
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {},
           icon: Icon(Icons.fitness_center),
         ),
-        title: Text('GET SET GO'),
+        title: Text('GET SET GO',style: TextStyle(fontFamily: 'Aleo',fontSize: 22)),
         actions: [
           IconButton(
             onPressed: () {},
             icon: Icon(Icons.more_vert),
           ),
         ],
-        backgroundColor: Colors.black,
+        backgroundColor: Color(0xFF660000),
       ),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(8, 80, 8, 8),
@@ -70,7 +72,7 @@ class _SignInPageState extends State<SignInPage> {
                 padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                 child: RaisedButton(
                   textColor: Colors.white,
-                  color: Colors.black,
+                  color: Color(0xFF660000),
                   child: Text('Login'),
                   onPressed: () {
                     // ignore: non_constant_identifier_names
@@ -96,12 +98,12 @@ class _SignInPageState extends State<SignInPage> {
             Container(
                 child: Row(
               children: <Widget>[
-                Text('Do not have an account?'),
+                Text('Don`t have an account ?',style: TextStyle( fontSize: 16, color: Color(0xFF660000,)),),
                 FlatButton(
-                  textColor: Colors.black,
+                  textColor: Color(0xFF660000),
                   child: Text(
                     'Sign up',
-                    style: TextStyle(fontSize: 16),
+                    style: TextStyle(decoration:TextDecoration.underline,fontSize: 18),
                   ),
                   onPressed: () {
                     //signup screen
@@ -118,7 +120,7 @@ class _SignInPageState extends State<SignInPage> {
                 padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                 child: RaisedButton(
                   textColor: Colors.white,
-                  color: Colors.black,
+                  color: Color(0xFF660000),
                   child: Text('LOGIN WITH FACEBOOK'),
                   onPressed: () {
                     final plugin = FacebookLogin(debug: true);
