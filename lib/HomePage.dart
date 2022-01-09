@@ -23,6 +23,7 @@ class Homepage extends StatefulWidget {
 class _InputPageState extends State<Homepage> {
   late FirebaseAuth _auth;
 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,11 +33,13 @@ class _InputPageState extends State<Homepage> {
             onPressed: () {},
             icon: Icon(Icons.fitness_center),
           ),
+
           title: Text('GET SET GO',style: TextStyle(fontFamily: 'Aleo',fontWeight: FontWeight.bold,fontSize: 22),),
           actions: [
             IconButton(
               onPressed: () {
                 context.read<AuthService>().Signout().then((result) => Navigator.push(context, MaterialPageRoute(builder: (Context) => SignInPage())));
+                //print(_auth.currentUser);
 
               },
               icon: Icon(Icons.logout),
@@ -69,6 +72,7 @@ class _InputPageState extends State<Homepage> {
                   child: ResusableCard(
                     onPress: () {
                       setState(() {
+
                         Navigator.push(context, MaterialPageRoute(builder: (Context) => bmi()));
 
                       });

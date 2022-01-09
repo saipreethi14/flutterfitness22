@@ -79,14 +79,6 @@ class _CoachDataState extends State<CoachData> {
          "Coach Data", style: TextStyle(fontWeight: FontWeight.bold,fontFamily: 'Aleo'),
        ),
        backgroundColor: Color(0xFF660000),
-       actions: <Widget>[
-         IconButton(
-           onPressed: () {
-             context.read<AuthService>().Signout().then((result) => Navigator.push(context, MaterialPageRoute(builder: (Context) => SignInPage())));
-           },
-           icon: Icon(Icons.logout),
-         ),
-       ],
      ),
      body: Padding(
        padding: const EdgeInsets.all(8.0),
