@@ -105,6 +105,38 @@ class videoPage extends StatelessWidget {
             looping: false,
             autoplay: true,
           ),
+          SizedBox(height:10),
+          Center(
+            child: Text('6. Lifting Large Ropes',style: TextStyle(
+              fontSize: 30,
+              fontFamily: 'Aleo',
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+              fontStyle: FontStyle.italic,
+            ),),
+          ),
+          VideoItems(
+            videoPlayerController: VideoPlayerController.network(
+                'https://assets.mixkit.co/videos/preview/mixkit-man-doing-rope-exercise-730-large.mp4'),
+            autoplay: true,
+            looping: false,
+          ),
+          SizedBox(height:10),
+          Center(
+            child: Text('7. Mountain Climber exercise',style: TextStyle(
+              fontSize: 30,
+              fontFamily: 'Aleo',
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+              fontStyle: FontStyle.italic,
+            ),),
+          ),
+          VideoItems(
+            videoPlayerController: VideoPlayerController.network(
+                'https://assets.mixkit.co/videos/preview/mixkit-woman-doing-mountain-climber-exercise-726-large.mp4'),
+            autoplay: true,
+            looping: false,
+          ),
         ],
       ),
     );
