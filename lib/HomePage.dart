@@ -92,7 +92,7 @@ class _InputPageState extends State<Homepage> {
                   child: ResusableCard(
                     onPress: () {
                       setState(() {
-                        context.read<AuthService>().Signout().then((result) => Navigator.push(context, MaterialPageRoute(builder: (Context) => CoachData())));
+                        Navigator.push(context, MaterialPageRoute(builder: (Context) => CoachData()));
 
 
                       });
