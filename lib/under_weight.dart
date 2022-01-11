@@ -68,7 +68,8 @@ class _underWeightState extends State<underWeight> {
                               padding: const EdgeInsets.only(left: 35, top:35.0, bottom: 10),
                               child: Text('Rice', style: TextStyle(
                                 fontSize: 22,
-                                color: Colors.brown,
+                                fontFamily: 'Aleo',
+                                color: Color(0xFF660000),
                               ),),
                             ),
 
@@ -78,24 +79,28 @@ class _underWeightState extends State<underWeight> {
                                   ,
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("0.3 gram fat, 2.7 g protein,",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("0.1 grams sugar.",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("and 0.9 grams fibres.",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
@@ -149,7 +154,8 @@ class _underWeightState extends State<underWeight> {
                               padding: const EdgeInsets.only(left: 20, top:35.0, bottom: 10),
                               child: Text('Whole Eggs', style: TextStyle(
                                 fontSize: 22,
-                                color: Colors.brown,
+                                fontFamily: 'Aleo',
+                                color: Color(0xFF660000),
                               ),),
                             ),
 
@@ -159,24 +165,28 @@ class _underWeightState extends State<underWeight> {
                                   ,
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("5 grams fat, 7 g protein,",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("no sugar.",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("and no fibres.",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
@@ -220,7 +230,7 @@ class _underWeightState extends State<underWeight> {
                             height: 130,
                             width: 150,
                             child: Image(
-                              image: AssetImage('images/avocados.jpeg'),
+                              image: AssetImage('images/avacado.jpeg'),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -232,7 +242,8 @@ class _underWeightState extends State<underWeight> {
                               padding: const EdgeInsets.only(left: 35, top:35.0, bottom: 10),
                               child: Text('Avocados', style: TextStyle(
                                 fontSize: 22,
-                                color: Colors.brown,
+                                fontFamily: 'Aleo',
+                                color: Color(0xFF660000),
                               ),),
                             ),
 
@@ -242,6 +253,7 @@ class _underWeightState extends State<underWeight> {
                                   ,
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
@@ -254,12 +266,14 @@ class _underWeightState extends State<underWeight> {
                                 Text("0.7 grams sugar.",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("and 5 grams fibres.",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
@@ -314,7 +328,8 @@ class _underWeightState extends State<underWeight> {
                               padding: const EdgeInsets.only(left: 35, top:35.0, bottom: 10),
                               child: Text('Cheese', style: TextStyle(
                                 fontSize: 22,
-                                color: Colors.brown,
+                                fontFamily: 'Aleo',
+                                color: Color(0xFF660000),
                               ),),
                             ),
 
@@ -324,24 +339,28 @@ class _underWeightState extends State<underWeight> {
                                   ,
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("33 gram fat, 25 g protein,",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("0.5 grams sugar.",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("and no fibres.",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
@@ -396,7 +415,8 @@ class _underWeightState extends State<underWeight> {
                               padding: const EdgeInsets.only(left: 35, top:35.0, bottom: 10),
                               child: Text('Bananas', style: TextStyle(
                                 fontSize: 22,
-                                color: Colors.brown,
+                                fontFamily: 'Aleo',
+                                color: Color(0xFF660000),
                               ),),
                             ),
 
@@ -406,24 +426,28 @@ class _underWeightState extends State<underWeight> {
                                   ,
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("0.3 gram fat, 1.1 g protein,",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("12 grams sugar.",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("and 3 grams fibres.",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
@@ -467,7 +491,7 @@ class _underWeightState extends State<underWeight> {
                             height: 130,
                             width: 150,
                             child: Image(
-                              image: AssetImage('images/chicken breast1.jpeg'),
+                              image: AssetImage('images/chicken.jpeg'),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -479,7 +503,8 @@ class _underWeightState extends State<underWeight> {
                               padding: const EdgeInsets.only(left: 5, top:35.0, bottom: 10),
                               child: Text('Chicken Breast', style: TextStyle(
                                 fontSize: 22,
-                                color: Colors.brown,
+                                fontFamily: 'Aleo',
+                                color: Color(0xFF660000),
                               ),),
                             ),
 
@@ -489,6 +514,7 @@ class _underWeightState extends State<underWeight> {
                                   ,
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
@@ -501,12 +527,14 @@ class _underWeightState extends State<underWeight> {
                                 Text("0 grams sugar.",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("and fibres.",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
@@ -549,7 +577,7 @@ class _underWeightState extends State<underWeight> {
                             height: 130,
                             width: 150,
                             child: Image(
-                              image: AssetImage('images/dark chocolate.jpeg'),
+                              image: AssetImage('images/chocolat.jpeg'),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -561,7 +589,8 @@ class _underWeightState extends State<underWeight> {
                               padding: const EdgeInsets.only(left: 2, top:35.0, bottom: 10),
                               child: Text('Dark Chocolate', style: TextStyle(
                                 fontSize: 22,
-                                color: Colors.brown,
+                                fontFamily: 'Aleo',
+                                color: Color(0xFF660000),
                               ),),
                             ),
 
@@ -571,24 +600,28 @@ class _underWeightState extends State<underWeight> {
                                   ,
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("12 gram fat, 2 g protein,",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("less sugar.",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("and 11 grams fibres.",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
@@ -631,7 +664,7 @@ class _underWeightState extends State<underWeight> {
                             height: 130,
                             width: 150,
                             child: Image(
-                              image: AssetImage('images/dried fruits.jpeg'),
+                              image: AssetImage('images/driedfruits2.jpeg'),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -643,7 +676,8 @@ class _underWeightState extends State<underWeight> {
                               padding: const EdgeInsets.only(left: 10, top:35.0, bottom: 10),
                               child: Text('Dried Fruits', style: TextStyle(
                                 fontSize: 22,
-                                color: Colors.brown,
+                                fontFamily: 'Aleo',
+                                color: Color(0xFF660000),
                               ),),
                             ),
 
@@ -653,24 +687,28 @@ class _underWeightState extends State<underWeight> {
                                   ,
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("2.7 grams fat, 1 g protein,",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("58 grams sugar.",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("and fibres.",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
@@ -713,7 +751,7 @@ class _underWeightState extends State<underWeight> {
                             height: 130,
                             width: 150,
                             child: Image(
-                              image: AssetImage('images/pasta.jpeg'),
+                              image: AssetImage('images/pasta2.jpeg'),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -725,7 +763,8 @@ class _underWeightState extends State<underWeight> {
                               padding: const EdgeInsets.only(left: 35, top:35.0, bottom: 10),
                               child: Text('Pasta', style: TextStyle(
                                 fontSize: 22,
-                                color: Colors.brown,
+                                fontFamily: 'Aleo',
+                                color: Color(0xFF660000),
                               ),),
                             ),
 
@@ -735,24 +774,28 @@ class _underWeightState extends State<underWeight> {
                                   ,
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("1.1 gram fat, 5 g protein,",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("4.8 grams sugar.",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("and fibres.",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
@@ -795,7 +838,7 @@ class _underWeightState extends State<underWeight> {
                             height: 130,
                             width: 150,
                             child: Image(
-                              image: AssetImage('images/peanut butter.png'),
+                              image: AssetImage('images/peanutButter.jpeg'),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -807,7 +850,8 @@ class _underWeightState extends State<underWeight> {
                               padding: const EdgeInsets.only(left: 15, top:35.0, bottom: 10),
                               child: Text('Peanut Butter', style: TextStyle(
                                 fontSize: 22,
-                                color: Colors.brown,
+                                fontFamily: 'Aleo',
+                                color: Color(0xFF660000),
                               ),),
                             ),
 
@@ -817,24 +861,28 @@ class _underWeightState extends State<underWeight> {
                                   ,
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("50 gram fat, 25 g protein,",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("9 grams sugar.",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("and fibres.",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
@@ -890,7 +938,8 @@ class _underWeightState extends State<underWeight> {
                               padding: const EdgeInsets.only(left: 35, top:35.0, bottom: 10),
                               child: Text('Red Meat', style: TextStyle(
                                 fontSize: 22,
-                                color: Colors.brown,
+                                fontFamily: 'Aleo',
+                                color: Color(0xFF660000),
                               ),),
                             ),
 
@@ -900,24 +949,28 @@ class _underWeightState extends State<underWeight> {
                                   ,
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("high fat, 25 g protein,",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("no sugar.",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
                                 Text("and no fibres.",
                                   style: TextStyle(
                                     fontSize: 10,
+                                    fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),

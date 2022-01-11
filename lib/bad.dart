@@ -18,7 +18,7 @@ class _badState extends State<bad> {
         appBar: AppBar(
           backgroundColor: Color(0xFF660000),
           title:
-              Text("Filling foods for Weight loss", style:TextStyle(fontFamily: 'Aleo')),
+              Text("Foods for Weight loss", style:TextStyle(fontFamily: 'Aleo')),
         ),
         body: SafeArea(
           child: ListView(
@@ -62,7 +62,7 @@ class _badState extends State<bad> {
                               padding: const EdgeInsets.only(left: 35, top:35.0, bottom: 10),
                               child: Text('Apples', style: TextStyle(
                                 fontSize: 22,
-                                color: Colors.brown,
+                                color: Color(0xFF660000),
                               ),),
                             ),
 
@@ -131,7 +131,7 @@ class _badState extends State<bad> {
                             height: 130,
                             width: 150,
                             child: Image(
-                              image: AssetImage('images/eggs.jpeg'),
+                              image: AssetImage('images/egg.jpeg'),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -143,7 +143,7 @@ class _badState extends State<bad> {
                               padding: const EdgeInsets.only(left: 35, top:35.0, bottom: 10),
                               child: Text('Eggs', style: TextStyle(
                                 fontSize: 22,
-                                color: Colors.brown,
+                                color: Color(0xFF660000),
                               ),),
                             ),
 
@@ -214,7 +214,7 @@ class _badState extends State<bad> {
                             height: 130,
                             width: 150,
                             child: Image(
-                              image: AssetImage('images/almonds.jpeg'),
+                              image: AssetImage('images/almon.jpeg'),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -226,7 +226,7 @@ class _badState extends State<bad> {
                               padding: const EdgeInsets.only(left: 35, top:35.0, bottom: 10),
                               child: Text('Almonds', style: TextStyle(
                                 fontSize: 22,
-                                color: Colors.brown,
+                                color: Color(0xFF660000),
                               ),),
                             ),
 
@@ -308,7 +308,7 @@ class _badState extends State<bad> {
                               padding: const EdgeInsets.only(left: 35, top:35.0, bottom: 10),
                               child: Text('Potatoes', style: TextStyle(
                                 fontSize: 22,
-                                color: Colors.brown,
+                                color:Color(0xFF660000),
                               ),),
                             ),
 
@@ -378,7 +378,7 @@ class _badState extends State<bad> {
                             height: 130,
                             width: 150,
                             child: Image(
-                              image: AssetImage('images/beans.jpeg'),
+                              image: AssetImage('images/beann.jpg'),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -390,7 +390,7 @@ class _badState extends State<bad> {
                               padding: const EdgeInsets.only(left: 35, top:35.0, bottom: 10),
                               child: Text('Beans', style: TextStyle(
                                 fontSize: 22,
-                                color: Colors.brown,
+                                color: Color(0xFF660000),
                               ),),
                             ),
 
@@ -461,7 +461,7 @@ class _badState extends State<bad> {
                             height: 130,
                             width: 150,
                             child: Image(
-                              image: AssetImage('images/cacao.jpeg'),
+                              image: AssetImage('images/cocoabean.jpeg'),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -473,7 +473,7 @@ class _badState extends State<bad> {
                               padding: const EdgeInsets.only(left: 35, top:35.0, bottom: 10),
                               child: Text('Cacao', style: TextStyle(
                                 fontSize: 22,
-                                color: Colors.brown,
+                                color: Color(0xFF660000),
                               ),),
                             ),
 
@@ -543,7 +543,7 @@ class _badState extends State<bad> {
                             height: 130,
                             width: 150,
                             child: Image(
-                              image: AssetImage('images/wheat berries.jpeg'),
+                              image: AssetImage('images/wheat22.jpeg'),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -555,7 +555,7 @@ class _badState extends State<bad> {
                               padding: const EdgeInsets.only(left: 10, top:35.0, bottom: 10),
                               child: Text('Wheat Berries', style: TextStyle(
                                 fontSize: 22,
-                                color: Colors.brown,
+                                color: Color(0xFF660000),
                               ),),
                             ),
 
@@ -637,7 +637,7 @@ class _badState extends State<bad> {
                               padding: const EdgeInsets.only(left: 35, top:35.0, bottom: 10),
                               child: Text('Figs', style: TextStyle(
                                 fontSize: 22,
-                                color: Colors.brown,
+                                color: Color(0xFF660000),
                               ),),
                             ),
 
@@ -719,7 +719,7 @@ class _badState extends State<bad> {
                               padding: const EdgeInsets.only(left: 35, top:35.0, bottom: 10),
                               child: Text('Lemons', style: TextStyle(
                                 fontSize: 22,
-                                color: Colors.brown,
+                                color: Color(0xFF660000),
                               ),),
                             ),
 
@@ -789,7 +789,7 @@ class _badState extends State<bad> {
                             height: 130,
                             width: 150,
                             child: Image(
-                              image: AssetImage('images/greek yogurt.jpeg'),
+                              image: AssetImage('images/yogurts.jpeg'),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -801,7 +801,7 @@ class _badState extends State<bad> {
                               padding: const EdgeInsets.only(left: 15, top:35.0, bottom: 10),
                               child: Text('Greek Yogurt', style: TextStyle(
                                 fontSize: 22,
-                                color: Colors.brown,
+                                color: Color(0xFF660000),
                               ),),
                             ),
 
@@ -872,7 +872,7 @@ class _badState extends State<bad> {
                             height: 130,
                             width: 150,
                             child: Image(
-                              image: AssetImage('images/popcorn.jpeg'),
+                              image: AssetImage('images/popco.jpeg'),
                               fit: BoxFit.fill,
                             ),
                           ),
@@ -884,7 +884,7 @@ class _badState extends State<bad> {
                               padding: const EdgeInsets.only(left: 35, top:35.0, bottom: 10),
                               child: Text('Popcorn', style: TextStyle(
                                 fontSize: 22,
-                                color: Colors.brown,
+                                color: Color(0xFF660000),
                               ),),
                             ),
 
