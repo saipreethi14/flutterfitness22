@@ -211,6 +211,7 @@ class _bmiState extends State<bmi> {
                   border: OutlineInputBorder(),
                   labelText: 'Height in cm',
                   labelStyle: TextStyle(
+                      fontFamily: 'Aleo',
                     color: Color(0xFF660000),
                     fontSize: 18,
                   ),
@@ -237,6 +238,7 @@ class _bmiState extends State<bmi> {
                   border: OutlineInputBorder(),
                   labelText: 'Weight in kg',
                   labelStyle: TextStyle(
+                    fontFamily: 'Aleo',
                     color: Color(0xFF660000),
                     fontSize: 18,
                   ),
@@ -263,7 +265,7 @@ class _bmiState extends State<bmi> {
                           fontSize: 18,
                           fontFamily: 'Aleo',
                           fontWeight: FontWeight.bold,
-                          color: Colors.black,
+                          color: Color(0xFF660000),
                         ),),
                       ),
                     ),
@@ -272,7 +274,7 @@ class _bmiState extends State<bmi> {
                       child: Text(age.toString(), style: TextStyle(
                         fontSize: 22,
                         fontWeight: FontWeight.bold,
-                        color: Colors.black,
+                        color: Color(0xFF660000),
                       ),),
                     ),
                     Padding(

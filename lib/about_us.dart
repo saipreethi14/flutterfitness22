@@ -34,7 +34,7 @@ class _AboutUsState extends State<AboutUs> {
             children: <Widget> [
               Center(
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 10.0),
+                  padding: const EdgeInsets.only(top: 40.0),
                   child: Text('Our Team', style: TextStyle(
                     fontSize: 40,
                     fontWeight: FontWeight.bold,
@@ -78,7 +78,7 @@ class _AboutUsState extends State<AboutUs> {
                               padding: const EdgeInsets.all(28.0),
                               child: CircleAvatar(
                                 radius: 60.0,
-                                backgroundImage: NetworkImage('https://www.nicepng.com/png/detail/258-2587185_kanchan-professional-young-woman-png.png'),
+                                backgroundImage: NetworkImage('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80'),
                               ),
                             ),
                             Text('Saipreethi', style: TextStyle(
@@ -127,7 +127,7 @@ class _AboutUsState extends State<AboutUs> {
                               padding: const EdgeInsets.all(28.0),
                               child: CircleAvatar(
                                 radius: 60.0,
-                                backgroundImage: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQyO41XHnhQ30L8YgqmGaJ85h2sHalqtAsOw&usqp=CAU'),
+                                backgroundImage: NetworkImage('https://images.unsplash.com/photo-1600275669439-14e40452d20b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'),
                               ),
                             ),
                             Text('Jatinder', style: TextStyle(
@@ -175,7 +175,7 @@ class _AboutUsState extends State<AboutUs> {
                               padding: const EdgeInsets.all(28.0),
                               child: CircleAvatar(
                                 radius: 60.0,
-                                backgroundImage: NetworkImage('https://img.favpng.com/9/19/21/businessperson-company-leadership-image-sales-png-favpng-yVH49h629HvJ6vg55yttGkbqv.jpg'),
+                                backgroundImage: NetworkImage('https://images.unsplash.com/photo-1603575448878-868a20723f5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'),
                               ),
                             ),
                             Text('Praveen', style: TextStyle(
@@ -223,7 +223,7 @@ class _AboutUsState extends State<AboutUs> {
                               padding: const EdgeInsets.all(28.0),
                               child: CircleAvatar(
                                 radius: 60.0,
-                                backgroundImage: NetworkImage('https://pinnacletekeducator.com/wp-content/uploads/2021/05/depositphotos_12485614-stock-photo-asian-businesswoman-with-tablet-computer.jpg'),
+                                backgroundImage: NetworkImage('https://images.unsplash.com/photo-1543269664-02e941c052f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'),
                               ),
                             ),
                             Text('Manpreet', style: TextStyle(

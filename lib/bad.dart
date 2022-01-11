@@ -72,25 +72,25 @@ class _badState extends State<bad> {
                                   ,
                                   style: TextStyle(
                                     fontSize: 10,
-                                    color: Colors.black,
+                                    color: Color(0xFF660000),
                                   ),
                                 ),
                                 Text("0 gram fat, 1 g protein,",
                                   style: TextStyle(
                                     fontSize: 10,
-                                    color: Colors.black,
+                                    color: Color(0xFF660000),
                                   ),
                                 ),
                                 Text("19 grams sugar.",
                                   style: TextStyle(
                                     fontSize: 10,
-                                    color: Colors.black,
+                                    color: Color(0xFF660000),
                                   ),
                                 ),
                                 Text("and 3 grams fibres.",
                                   style: TextStyle(
                                     fontSize: 10,
-                                    color: Colors.black,
+                                    color: Color(0xFF660000),
                                   ),
                                 ),
 

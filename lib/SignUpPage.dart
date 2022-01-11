@@ -46,6 +46,10 @@ class _SignUpPageState extends State<SignUpPage> {
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'User EmailID',
+                  labelStyle: TextStyle(
+                    fontFamily: 'Aleo',
+                    color: Color(0xFF660000),
+                  ),
                   hintText: 'Enter Your Name',
                 ),
               ),
@@ -80,7 +84,7 @@ class _SignUpPageState extends State<SignUpPage> {
                 child: RaisedButton(
                   textColor: Colors.white,
                   color: Color(0xFF660000),
-                  child: Text('Login'),
+                  child: Text('Sign up'),
                   onPressed: () {
                     final String email = emailController.text.trim();
                     final String password = passwordController.text.trim();

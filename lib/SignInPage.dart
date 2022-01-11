@@ -50,6 +50,10 @@ class _SignInPageState extends State<SignInPage> {
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'User Email Id',
+                  labelStyle: TextStyle(
+                    fontFamily: 'Aleo',
+                    color: Color(0xFF660000),
+                  ),
                   hintText: 'Enter Your Email ID',
                 ),
               ),
@@ -62,6 +66,10 @@ class _SignInPageState extends State<SignInPage> {
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
                   labelText: 'Password',
+                  labelStyle: TextStyle(
+                    fontFamily: 'Aleo',
+                    color: Color(0xFF660000),
+                  ),
                   hintText: 'Enter Password',
                 ),
               ),
