@@ -49,6 +49,7 @@ class _badState extends State<bad> {
                   child: Row(
                     children: <Widget>[
                       Padding(
+                        // list of items that are suggested if they come under over-weight.
                         padding: const EdgeInsets.only(
                             left: 35.0, top: 35, bottom: 35, right: 15),
                         child: Container(
