@@ -1,5 +1,5 @@
 
-
+// this class is of no use
 import 'dart:collection';
 import 'Coach.dart';
 import 'package:ff/Coach.dart';

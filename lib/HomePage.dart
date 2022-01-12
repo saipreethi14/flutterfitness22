@@ -56,7 +56,6 @@ class _InputPageState extends State<Homepage> {
                     onPress: () {
                       setState(() {
                         Navigator.push(context, MaterialPageRoute(builder: (Context) => ListofExercise()));
-                        print(_auth.currentUser);
                       });
                     },
                     cardChild: ImageContent(

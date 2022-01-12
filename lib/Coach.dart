@@ -1,6 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
+
+// in this  class I provided the properties of a coach like name ,age,proficient,and email id with image
 class Coach {
 
   late String name;

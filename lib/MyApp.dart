@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_login_facebook/flutter_login_facebook.dart';
 
 
+//this class is directly linked with firebase an facebook.developer to authenticate the user with Facebook
 
 class MyApp1 extends StatefulWidget {
   final FacebookLogin plugin;
@@ -37,7 +38,7 @@ class _MyHomeState extends State<MyApp1> {
     final isLogin = _token != null && _profile != null;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Login via Facebook ',style: TextStyle(fontFamily: 'Aleo'),),
+        title: const Text('Login with Facebook ',style: TextStyle(fontFamily: 'Aleo'),),
         backgroundColor:  Color(0xFF660000),
       ),
       body: Padding(

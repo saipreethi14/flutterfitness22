@@ -405,7 +405,6 @@ class _bmiState extends State<bmi> {
           ],
         ),
       ),
-
     );
   }
 }

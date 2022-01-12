@@ -6,7 +6,7 @@ import 'package:ff/Coachsetter.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-
+// this class will provide Firebase services such as Login and Logout  of a user
 class AuthService {
   final FirebaseAuth _auth;
 

@@ -10,6 +10,9 @@ import 'MyApp.dart';
 import 'SignUpPage.dart';
 import 'auth_service.dart';
 
+
+//this is the sign in page in which we can login and signup  with firebase and also with facebook
+
 class SignInPage extends StatefulWidget {
   const SignInPage({Key? key}) : super(key: key);
 

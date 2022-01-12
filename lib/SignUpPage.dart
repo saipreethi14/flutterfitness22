@@ -3,8 +3,9 @@ import 'package:ff/SignInPage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
 import 'auth_service.dart';
+
+//this page will direct creates an account for a user and store user data in firebase authentication
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({Key? key}) : super(key: key);

@@ -8,6 +8,9 @@ import 'SignInPage.dart';
 import 'package:ff/auth_service.dart';
 import 'package:flutter/cupertino.dart';
 
+
+//this page will display all the properties of the coach and also it is linked with firestore
+
 class CoachData extends StatefulWidget with ChangeNotifier {
 
   @override
