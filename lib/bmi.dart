@@ -34,6 +34,7 @@ class bmi extends StatefulWidget {
 }
 
 class _bmiState extends State<bmi> {
+  // get user input
   final TextEditingController _heightController = TextEditingController();
   final TextEditingController _weightController = TextEditingController();
 
