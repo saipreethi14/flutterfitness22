@@ -5,7 +5,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_login_facebook/flutter_login_facebook.dart';
 
-
 //this class is directly linked with firebase an facebook.developer to authenticate the user with Facebook
 
 class MyApp1 extends StatefulWidget {
@@ -38,8 +37,11 @@ class _MyHomeState extends State<MyApp1> {
     final isLogin = _token != null && _profile != null;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Login with Facebook ',style: TextStyle(fontFamily: 'Aleo'),),
-        backgroundColor:  Color(0xFF660000),
+        title: const Text(
+          'Login with Facebook ',
+          style: TextStyle(fontFamily: 'Aleo'),
+        ),
+        backgroundColor: Color(0xFF660000),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 18.0, horizontal: 8.0),
@@ -51,34 +53,32 @@ class _MyHomeState extends State<MyApp1> {
                 Padding(
                   padding: const EdgeInsets.only(bottom: 10),
                   child: _buildUserInfo(context, _profile!, _token!, _email),
-
                 ),
-              if(isLogin && FacebookLoginStatus != FacebookLoginStatus.cancel)
-                Padding(padding: EdgeInsets.all(30),
-                child: FlatButton(
-
-                  child: Text('Login'),
-                  onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (Context) => Homepage()));
-                  },
-                ),),
+              if (isLogin && FacebookLoginStatus != FacebookLoginStatus.cancel)
+                Padding(
+                  padding: EdgeInsets.all(30),
+                  child: FlatButton(
+                    child: Text('Login'),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (Context) => Homepage()));
+                    },
+                  ),
+                ),
               isLogin
                   ? OutlinedButton(
-                child: const Text('Log Out'),
-                onPressed: _onPressedLogOutButton,
-              )
+                      child: const Text('Log Out'),
+                      onPressed: _onPressedLogOutButton,
+                    )
                   : OutlinedButton(
-                child: const Text('Log In'),
-
-                onPressed: _onPressedLogInButton,
-
-              ),
+                      child: const Text('Log In'),
+                      onPressed: _onPressedLogInButton,
+                    ),
               if (!isLogin && Platform.isAndroid)
                 OutlinedButton(
                   child: const Text('Express Log In'),
                   onPressed: () => _onPressedExpressLogInButton(context),
                 )
-
             ],
           ),
         ),
@@ -120,7 +120,7 @@ class _MyHomeState extends State<MyApp1> {
     await widget.plugin.logIn(permissions: [
       FacebookPermission.publicProfile,
       FacebookPermission.email,
-        ]);
+    ]);
 
     await _updateLoginInfo();
   }

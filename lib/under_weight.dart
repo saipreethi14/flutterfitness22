@@ -16,21 +16,22 @@ class _underWeightState extends State<underWeight> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-          backgroundColor:Color(0xFFEBD3D4),
+        backgroundColor: Color(0xFFEBD3D4),
         appBar: AppBar(
           backgroundColor: Color(0xFF660000),
-          title:
-          Row(
+          title: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text("Foods to gain Weight",style: TextStyle(fontFamily: 'Aleo'),),
-
+              Text(
+                "Foods to gain Weight",
+                style: TextStyle(fontFamily: 'Aleo'),
+              ),
             ],
           ),
         ),
         body: SafeArea(
           child: ListView(
-            children: <Widget> [
+            children: <Widget>[
               //-------------------
               Padding(
                 padding: const EdgeInsets.only(left: 15.0, right: 15, top: 20),
@@ -53,7 +54,8 @@ class _underWeightState extends State<underWeight> {
                     child: Row(
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.only(left: 35.0, top: 35, bottom: 35, right: 15),
+                          padding: const EdgeInsets.only(
+                              left: 35.0, top: 35, bottom: 35, right: 15),
                           child: Container(
                             height: 130,
                             width: 150,
@@ -65,56 +67,59 @@ class _underWeightState extends State<underWeight> {
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget> [
+                          children: <Widget>[
                             Padding(
-                              padding: const EdgeInsets.only(left: 35, top:35.0, bottom: 10),
-                              child: Text('Rice', style: TextStyle(
-                                fontSize: 22,
-                                fontFamily: 'Aleo',
-                                color: Color(0xFF660000),
-                              ),),
+                              padding: const EdgeInsets.only(
+                                  left: 35, top: 35.0, bottom: 10),
+                              child: Text(
+                                'Rice',
+                                style: TextStyle(
+                                  fontSize: 22,
+                                  fontFamily: 'Aleo',
+                                  color: Color(0xFF660000),
+                                ),
+                              ),
                             ),
-
                             Column(
-                              children: <Widget> [
-                                Text("130 calories, 28 g carbohydrates,"
-                                  ,
+                              children: <Widget>[
+                                Text(
+                                  "130 calories, 28 g carbohydrates,",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("0.3 gram fat, 2.7 g protein,",
+                                Text(
+                                  "0.3 gram fat, 2.7 g protein,",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("0.1 grams sugar.",
+                                Text(
+                                  "0.1 grams sugar.",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("and 0.9 grams fibres.",
+                                Text(
+                                  "and 0.9 grams fibres.",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-
                               ],
                             )
-
                           ],
                         ),
                       ],
-                    )
-                ),
+                    )),
               ),
               //......................................
 
@@ -139,7 +144,8 @@ class _underWeightState extends State<underWeight> {
                     child: Row(
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.only(left: 35.0, top: 35, bottom: 35, right: 15),
+                          padding: const EdgeInsets.only(
+                              left: 35.0, top: 35, bottom: 35, right: 15),
                           child: Container(
                             height: 130,
                             width: 150,
@@ -151,56 +157,59 @@ class _underWeightState extends State<underWeight> {
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget> [
+                          children: <Widget>[
                             Padding(
-                              padding: const EdgeInsets.only(left: 20, top:35.0, bottom: 10),
-                              child: Text('Whole Eggs', style: TextStyle(
-                                fontSize: 22,
-                                fontFamily: 'Aleo',
-                                color: Color(0xFF660000),
-                              ),),
+                              padding: const EdgeInsets.only(
+                                  left: 20, top: 35.0, bottom: 10),
+                              child: Text(
+                                'Whole Eggs',
+                                style: TextStyle(
+                                  fontSize: 22,
+                                  fontFamily: 'Aleo',
+                                  color: Color(0xFF660000),
+                                ),
+                              ),
                             ),
-
                             Column(
-                              children: <Widget> [
-                                Text("low calories, no carbohydrates,"
-                                  ,
+                              children: <Widget>[
+                                Text(
+                                  "low calories, no carbohydrates,",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("5 grams fat, 7 g protein,",
+                                Text(
+                                  "5 grams fat, 7 g protein,",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("no sugar.",
+                                Text(
+                                  "no sugar.",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("and no fibres.",
+                                Text(
+                                  "and no fibres.",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-
                               ],
                             )
-
                           ],
                         ),
                       ],
-                    )
-                ),
+                    )),
               ),
               //-----------------
 
@@ -227,7 +236,8 @@ class _underWeightState extends State<underWeight> {
                     child: Row(
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.only(left: 35.0, top: 35, bottom: 35, right: 15),
+                          padding: const EdgeInsets.only(
+                              left: 35.0, top: 35, bottom: 35, right: 15),
                           child: Container(
                             height: 130,
                             width: 150,
@@ -239,55 +249,58 @@ class _underWeightState extends State<underWeight> {
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget> [
+                          children: <Widget>[
                             Padding(
-                              padding: const EdgeInsets.only(left: 35, top:35.0, bottom: 10),
-                              child: Text('Avocados', style: TextStyle(
-                                fontSize: 22,
-                                fontFamily: 'Aleo',
-                                color: Color(0xFF660000),
-                              ),),
+                              padding: const EdgeInsets.only(
+                                  left: 35, top: 35.0, bottom: 10),
+                              child: Text(
+                                'Avocados',
+                                style: TextStyle(
+                                  fontSize: 22,
+                                  fontFamily: 'Aleo',
+                                  color: Color(0xFF660000),
+                                ),
+                              ),
                             ),
-
                             Column(
-                              children: <Widget> [
-                                Text("160 calories, 9 g carbohydrates,"
-                                  ,
+                              children: <Widget>[
+                                Text(
+                                  "160 calories, 9 g carbohydrates,",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("15 g fat, 2 g protein,",
+                                Text(
+                                  "15 g fat, 2 g protein,",
                                   style: TextStyle(
                                     fontSize: 10,
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("0.7 grams sugar.",
-                                  style: TextStyle(
-                                    fontSize: 10,
-                                    fontFamily: 'Aleo',
-                                    color: Colors.black,
-                                  ),
-                                ),
-                                Text("and 5 grams fibres.",
+                                Text(
+                                  "0.7 grams sugar.",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-
+                                Text(
+                                  "and 5 grams fibres.",
+                                  style: TextStyle(
+                                    fontSize: 10,
+                                    fontFamily: 'Aleo',
+                                    color: Colors.black,
+                                  ),
+                                ),
                               ],
                             )
-
                           ],
                         ),
                       ],
-                    )
-                ),
+                    )),
               ),
               //-----------------
 //......................................
@@ -313,7 +326,8 @@ class _underWeightState extends State<underWeight> {
                     child: Row(
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.only(left: 35.0, top: 35, bottom: 35, right: 15),
+                          padding: const EdgeInsets.only(
+                              left: 35.0, top: 35, bottom: 35, right: 15),
                           child: Container(
                             height: 130,
                             width: 150,
@@ -325,56 +339,59 @@ class _underWeightState extends State<underWeight> {
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget> [
+                          children: <Widget>[
                             Padding(
-                              padding: const EdgeInsets.only(left: 35, top:35.0, bottom: 10),
-                              child: Text('Cheese', style: TextStyle(
-                                fontSize: 22,
-                                fontFamily: 'Aleo',
-                                color: Color(0xFF660000),
-                              ),),
+                              padding: const EdgeInsets.only(
+                                  left: 35, top: 35.0, bottom: 10),
+                              child: Text(
+                                'Cheese',
+                                style: TextStyle(
+                                  fontSize: 22,
+                                  fontFamily: 'Aleo',
+                                  color: Color(0xFF660000),
+                                ),
+                              ),
                             ),
-
                             Column(
-                              children: <Widget> [
-                                Text("402 calories, 1.3 g carbohydrates,"
-                                  ,
+                              children: <Widget>[
+                                Text(
+                                  "402 calories, 1.3 g carbohydrates,",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("33 gram fat, 25 g protein,",
+                                Text(
+                                  "33 gram fat, 25 g protein,",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("0.5 grams sugar.",
+                                Text(
+                                  "0.5 grams sugar.",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("and no fibres.",
+                                Text(
+                                  "and no fibres.",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-
                               ],
                             )
-
                           ],
                         ),
                       ],
-                    )
-                ),
+                    )),
               ),
               //-----------------
               //......................................
@@ -400,7 +417,8 @@ class _underWeightState extends State<underWeight> {
                     child: Row(
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.only(left: 35.0, top: 35, bottom: 35, right: 15),
+                          padding: const EdgeInsets.only(
+                              left: 35.0, top: 35, bottom: 35, right: 15),
                           child: Container(
                             height: 130,
                             width: 150,
@@ -412,56 +430,59 @@ class _underWeightState extends State<underWeight> {
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget> [
+                          children: <Widget>[
                             Padding(
-                              padding: const EdgeInsets.only(left: 35, top:35.0, bottom: 10),
-                              child: Text('Bananas', style: TextStyle(
-                                fontSize: 22,
-                                fontFamily: 'Aleo',
-                                color: Color(0xFF660000),
-                              ),),
+                              padding: const EdgeInsets.only(
+                                  left: 35, top: 35.0, bottom: 10),
+                              child: Text(
+                                'Bananas',
+                                style: TextStyle(
+                                  fontSize: 22,
+                                  fontFamily: 'Aleo',
+                                  color: Color(0xFF660000),
+                                ),
+                              ),
                             ),
-
                             Column(
-                              children: <Widget> [
-                                Text("89 calories, 23 g carbohydrates,"
-                                  ,
+                              children: <Widget>[
+                                Text(
+                                  "89 calories, 23 g carbohydrates,",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("0.3 gram fat, 1.1 g protein,",
+                                Text(
+                                  "0.3 gram fat, 1.1 g protein,",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("12 grams sugar.",
+                                Text(
+                                  "12 grams sugar.",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("and 3 grams fibres.",
+                                Text(
+                                  "and 3 grams fibres.",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-
                               ],
                             )
-
                           ],
                         ),
                       ],
-                    )
-                ),
+                    )),
               ),
               //-----------------
 
@@ -488,7 +509,8 @@ class _underWeightState extends State<underWeight> {
                     child: Row(
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.only(left: 35.0, top: 35, bottom: 35, right: 15),
+                          padding: const EdgeInsets.only(
+                              left: 35.0, top: 35, bottom: 35, right: 15),
                           child: Container(
                             height: 130,
                             width: 150,
@@ -500,55 +522,58 @@ class _underWeightState extends State<underWeight> {
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget> [
+                          children: <Widget>[
                             Padding(
-                              padding: const EdgeInsets.only(left: 5, top:35.0, bottom: 10),
-                              child: Text('Chicken Breast', style: TextStyle(
-                                fontSize: 22,
-                                fontFamily: 'Aleo',
-                                color: Color(0xFF660000),
-                              ),),
+                              padding: const EdgeInsets.only(
+                                  left: 5, top: 35.0, bottom: 10),
+                              child: Text(
+                                'Chicken Breast',
+                                style: TextStyle(
+                                  fontSize: 22,
+                                  fontFamily: 'Aleo',
+                                  color: Color(0xFF660000),
+                                ),
+                              ),
                             ),
-
                             Column(
-                              children: <Widget> [
-                                Text("165 calories, no carbohydrates,"
-                                  ,
+                              children: <Widget>[
+                                Text(
+                                  "165 calories, no carbohydrates,",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("3.6 grams fat, 31 g protein,",
+                                Text(
+                                  "3.6 grams fat, 31 g protein,",
                                   style: TextStyle(
                                     fontSize: 10,
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("0 grams sugar.",
-                                  style: TextStyle(
-                                    fontSize: 10,
-                                    fontFamily: 'Aleo',
-                                    color: Colors.black,
-                                  ),
-                                ),
-                                Text("and fibres.",
+                                Text(
+                                  "0 grams sugar.",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-
+                                Text(
+                                  "and fibres.",
+                                  style: TextStyle(
+                                    fontSize: 10,
+                                    fontFamily: 'Aleo',
+                                    color: Colors.black,
+                                  ),
+                                ),
                               ],
                             )
-
                           ],
                         ),
                       ],
-                    )
-                ),
+                    )),
               ),
               //-----------------
 //......................................
@@ -574,7 +599,8 @@ class _underWeightState extends State<underWeight> {
                     child: Row(
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.only(left: 35.0, top: 35, bottom: 35, right: 15),
+                          padding: const EdgeInsets.only(
+                              left: 35.0, top: 35, bottom: 35, right: 15),
                           child: Container(
                             height: 130,
                             width: 150,
@@ -586,56 +612,59 @@ class _underWeightState extends State<underWeight> {
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget> [
+                          children: <Widget>[
                             Padding(
-                              padding: const EdgeInsets.only(left: 2, top:35.0, bottom: 10),
-                              child: Text('Dark Chocolate', style: TextStyle(
-                                fontSize: 22,
-                                fontFamily: 'Aleo',
-                                color: Color(0xFF660000),
-                              ),),
+                              padding: const EdgeInsets.only(
+                                  left: 2, top: 35.0, bottom: 10),
+                              child: Text(
+                                'Dark Chocolate',
+                                style: TextStyle(
+                                  fontSize: 22,
+                                  fontFamily: 'Aleo',
+                                  color: Color(0xFF660000),
+                                ),
+                              ),
                             ),
-
                             Column(
-                              children: <Widget> [
-                                Text("170 calories, 10 g carbohydrates,"
-                                  ,
+                              children: <Widget>[
+                                Text(
+                                  "170 calories, 10 g carbohydrates,",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("12 gram fat, 2 g protein,",
+                                Text(
+                                  "12 gram fat, 2 g protein,",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("less sugar.",
+                                Text(
+                                  "less sugar.",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("and 11 grams fibres.",
+                                Text(
+                                  "and 11 grams fibres.",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-
                               ],
                             )
-
                           ],
                         ),
                       ],
-                    )
-                ),
+                    )),
               ),
               //-----------------
               //......................................
@@ -661,7 +690,8 @@ class _underWeightState extends State<underWeight> {
                     child: Row(
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.only(left: 20.0, top: 35, bottom: 35, right: 15),
+                          padding: const EdgeInsets.only(
+                              left: 20.0, top: 35, bottom: 35, right: 15),
                           child: Container(
                             height: 130,
                             width: 150,
@@ -673,56 +703,59 @@ class _underWeightState extends State<underWeight> {
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget> [
+                          children: <Widget>[
                             Padding(
-                              padding: const EdgeInsets.only(left: 10, top:35.0, bottom: 10),
-                              child: Text('Dried Fruits', style: TextStyle(
-                                fontSize: 22,
-                                fontFamily: 'Aleo',
-                                color: Color(0xFF660000),
-                              ),),
+                              padding: const EdgeInsets.only(
+                                  left: 10, top: 35.0, bottom: 10),
+                              child: Text(
+                                'Dried Fruits',
+                                style: TextStyle(
+                                  fontSize: 22,
+                                  fontFamily: 'Aleo',
+                                  color: Color(0xFF660000),
+                                ),
+                              ),
                             ),
-
                             Column(
-                              children: <Widget> [
-                                Text("359 calories, 83 g carbohydrates,"
-                                  ,
+                              children: <Widget>[
+                                Text(
+                                  "359 calories, 83 g carbohydrates,",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("2.7 grams fat, 1 g protein,",
+                                Text(
+                                  "2.7 grams fat, 1 g protein,",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("58 grams sugar.",
+                                Text(
+                                  "58 grams sugar.",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("and fibres.",
+                                Text(
+                                  "and fibres.",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-
                               ],
                             )
-
                           ],
                         ),
                       ],
-                    )
-                ),
+                    )),
               ),
               //-----------------
               //......................................
@@ -748,7 +781,8 @@ class _underWeightState extends State<underWeight> {
                     child: Row(
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.only(left: 35.0, top: 35, bottom: 35, right: 15),
+                          padding: const EdgeInsets.only(
+                              left: 35.0, top: 35, bottom: 35, right: 15),
                           child: Container(
                             height: 130,
                             width: 150,
@@ -760,56 +794,59 @@ class _underWeightState extends State<underWeight> {
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget> [
+                          children: <Widget>[
                             Padding(
-                              padding: const EdgeInsets.only(left: 35, top:35.0, bottom: 10),
-                              child: Text('Pasta', style: TextStyle(
-                                fontSize: 22,
-                                fontFamily: 'Aleo',
-                                color: Color(0xFF660000),
-                              ),),
+                              padding: const EdgeInsets.only(
+                                  left: 35, top: 35.0, bottom: 10),
+                              child: Text(
+                                'Pasta',
+                                style: TextStyle(
+                                  fontSize: 22,
+                                  fontFamily: 'Aleo',
+                                  color: Color(0xFF660000),
+                                ),
+                              ),
                             ),
-
                             Column(
-                              children: <Widget> [
-                                Text("131 calories, 25 g carbohydrates,"
-                                  ,
+                              children: <Widget>[
+                                Text(
+                                  "131 calories, 25 g carbohydrates,",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("1.1 gram fat, 5 g protein,",
+                                Text(
+                                  "1.1 gram fat, 5 g protein,",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("4.8 grams sugar.",
+                                Text(
+                                  "4.8 grams sugar.",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("and fibres.",
+                                Text(
+                                  "and fibres.",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-
                               ],
                             )
-
                           ],
                         ),
                       ],
-                    )
-                ),
+                    )),
               ),
               //-----------------
 //......................................
@@ -835,7 +872,8 @@ class _underWeightState extends State<underWeight> {
                     child: Row(
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.only(left: 35.0, top: 35, bottom: 35, right: 15),
+                          padding: const EdgeInsets.only(
+                              left: 35.0, top: 35, bottom: 35, right: 15),
                           child: Container(
                             height: 130,
                             width: 150,
@@ -847,63 +885,67 @@ class _underWeightState extends State<underWeight> {
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget> [
+                          children: <Widget>[
                             Padding(
-                              padding: const EdgeInsets.only(left: 15, top:35.0, bottom: 10),
-                              child: Text('Peanut Butter', style: TextStyle(
-                                fontSize: 22,
-                                fontFamily: 'Aleo',
-                                color: Color(0xFF660000),
-                              ),),
+                              padding: const EdgeInsets.only(
+                                  left: 15, top: 35.0, bottom: 10),
+                              child: Text(
+                                'Peanut Butter',
+                                style: TextStyle(
+                                  fontSize: 22,
+                                  fontFamily: 'Aleo',
+                                  color: Color(0xFF660000),
+                                ),
+                              ),
                             ),
-
                             Column(
-                              children: <Widget> [
-                                Text("588 calories, 20 g carbohydrates,"
-                                  ,
+                              children: <Widget>[
+                                Text(
+                                  "588 calories, 20 g carbohydrates,",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("50 gram fat, 25 g protein,",
+                                Text(
+                                  "50 gram fat, 25 g protein,",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("9 grams sugar.",
+                                Text(
+                                  "9 grams sugar.",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("and fibres.",
+                                Text(
+                                  "and fibres.",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-
                               ],
                             )
-
                           ],
                         ),
                       ],
-                    )
-                ),
+                    )),
               ),
               //-----------------
 
               //......................................
 
               Padding(
-                padding: const EdgeInsets.only(left: 15.0, right: 15, top: 15, bottom: 15),
+                padding: const EdgeInsets.only(
+                    left: 15.0, right: 15, top: 15, bottom: 15),
                 child: Container(
                     width: double.infinity,
                     height: 160,
@@ -923,7 +965,8 @@ class _underWeightState extends State<underWeight> {
                     child: Row(
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.only(left: 35.0, top: 35, bottom: 35, right: 15),
+                          padding: const EdgeInsets.only(
+                              left: 35.0, top: 35, bottom: 35, right: 15),
                           child: Container(
                             height: 130,
                             width: 150,
@@ -935,56 +978,59 @@ class _underWeightState extends State<underWeight> {
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget> [
+                          children: <Widget>[
                             Padding(
-                              padding: const EdgeInsets.only(left: 35, top:35.0, bottom: 10),
-                              child: Text('Red Meat', style: TextStyle(
-                                fontSize: 22,
-                                fontFamily: 'Aleo',
-                                color: Color(0xFF660000),
-                              ),),
+                              padding: const EdgeInsets.only(
+                                  left: 35, top: 35.0, bottom: 10),
+                              child: Text(
+                                'Red Meat',
+                                style: TextStyle(
+                                  fontSize: 22,
+                                  fontFamily: 'Aleo',
+                                  color: Color(0xFF660000),
+                                ),
+                              ),
                             ),
-
                             Column(
-                              children: <Widget> [
-                                Text("300 calories, no carbohydrates,"
-                                  ,
+                              children: <Widget>[
+                                Text(
+                                  "300 calories, no carbohydrates,",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("high fat, 25 g protein,",
+                                Text(
+                                  "high fat, 25 g protein,",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("no sugar.",
+                                Text(
+                                  "no sugar.",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-                                Text("and no fibres.",
+                                Text(
+                                  "and no fibres.",
                                   style: TextStyle(
                                     fontSize: 10,
                                     fontFamily: 'Aleo',
                                     color: Colors.black,
                                   ),
                                 ),
-
                               ],
                             )
-
                           ],
                         ),
                       ],
-                    )
-                ),
+                    )),
               ),
               //-----------------
             ],

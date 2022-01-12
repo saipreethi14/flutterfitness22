@@ -10,7 +10,6 @@ import 'MyApp.dart';
 import 'SignUpPage.dart';
 import 'auth_service.dart';
 
-
 //this is the sign in page in which we can login and signup  with firebase and also with facebook
 
 class SignInPage extends StatefulWidget {
@@ -24,6 +23,7 @@ class _SignInPageState extends State<SignInPage> {
   TextEditingController emailController = new TextEditingController();
   TextEditingController passwordController = new TextEditingController();
   static final FacebookLogin facebookSignIn = new FacebookLogin();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +33,8 @@ class _SignInPageState extends State<SignInPage> {
           onPressed: () {},
           icon: Icon(Icons.fitness_center),
         ),
-        title: Text('GET SET GO',style: TextStyle(fontFamily: 'Aleo',fontSize: 22)),
+        title: Text('GET SET GO',
+            style: TextStyle(fontFamily: 'Aleo', fontSize: 22)),
         actions: [
           IconButton(
             onPressed: () {},
@@ -109,12 +110,20 @@ class _SignInPageState extends State<SignInPage> {
             Container(
                 child: Row(
               children: <Widget>[
-                Text('Don`t have an account ?',style: TextStyle( fontSize: 16, color: Color(0xFF660000,)),),
+                Text(
+                  'Don`t have an account ?',
+                  style: TextStyle(
+                      fontSize: 16,
+                      color: Color(
+                        0xFF660000,
+                      )),
+                ),
                 FlatButton(
                   textColor: Color(0xFF660000),
                   child: Text(
                     'Sign up',
-                    style: TextStyle(decoration:TextDecoration.underline,fontSize: 18),
+                    style: TextStyle(
+                        decoration: TextDecoration.underline, fontSize: 18),
                   ),
                   onPressed: () {
                     //signup screen
@@ -135,7 +144,12 @@ class _SignInPageState extends State<SignInPage> {
                   child: Text('LOGIN WITH FACEBOOK'),
                   onPressed: () {
                     final plugin = FacebookLogin(debug: true);
-                    Navigator.push(context, MaterialPageRoute(builder: (Context) => MyApp1(plugin:  plugin,)));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (Context) => MyApp1(
+                                  plugin: plugin,
+                                )));
                   },
                 )),
           ],

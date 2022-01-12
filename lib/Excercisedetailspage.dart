@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 // this stateless widget is used because state is not changing
 class Exercisedetailspage extends StatelessWidget {
   final int index;
+
   //the description of exercises is here.
   final List<String> description = <String>[
     'Planks are a great core stabilizing exercise. Your entire core is stabilized through constant tension, so nothing is neglected and they are completely safe.  Get in pushup position on your forearms with your elbows bent.  Hold yourself up in a straight line and pull your belly button in to create tension.  Hold for as long as you can before your back sags to the floor.  For a more difficult variation, raise your opposite leg and arm off the ground.',
@@ -27,7 +28,7 @@ class Exercisedetailspage extends StatelessWidget {
         title: Text(
           //name on the app bar
           'Exercise Details',
-          style: TextStyle(fontFamily: 'Aleo',fontWeight: FontWeight.bold),
+          style: TextStyle(fontFamily: 'Aleo', fontWeight: FontWeight.bold),
         ),
         //app bar background color
         backgroundColor: Color(0xFF660000),

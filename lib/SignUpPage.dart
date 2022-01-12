@@ -21,13 +21,16 @@ class _SignUpPageState extends State<SignUpPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xFFEBD3D4),
+      backgroundColor: Color(0xFFEBD3D4),
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {},
           icon: Icon(Icons.fitness_center),
         ),
-        title: Text('GET SET GO',style: TextStyle(fontSize: 22,fontFamily: 'Aleo'),),
+        title: Text(
+          'GET SET GO',
+          style: TextStyle(fontSize: 22, fontFamily: 'Aleo'),
+        ),
         actions: [
           IconButton(
             onPressed: () {},
@@ -103,7 +106,10 @@ class _SignUpPageState extends State<SignUpPage> {
                       }
                     }
                     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                      content: Text("Acoount created",style: TextStyle(color: Colors.white),),
+                      content: Text(
+                        "Acoount created",
+                        style: TextStyle(color: Colors.white),
+                      ),
                       backgroundColor: Color(0xFF660000),
                     ));
                   },
@@ -112,12 +118,16 @@ class _SignUpPageState extends State<SignUpPage> {
             Container(
                 child: Row(
               children: <Widget>[
-                Text('Already have an account ?',style: TextStyle(fontSize: 16,color: Color(0xFF660000)),),
+                Text(
+                  'Already have an account ?',
+                  style: TextStyle(fontSize: 16, color: Color(0xFF660000)),
+                ),
                 FlatButton(
                     textColor: Color(0xFF660000),
                     child: Text(
                       'Sign In',
-                      style: TextStyle(fontSize: 18,decoration:TextDecoration.underline),
+                      style: TextStyle(
+                          fontSize: 18, decoration: TextDecoration.underline),
                     ),
                     onPressed: () {
                       //signIN screen

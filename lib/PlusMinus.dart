@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 
 // This class is linked with bmi calculator page for designing +, - buttons for increasing and decreasing age.
 class PlusMinus extends StatelessWidget {
-
   PlusMinus({required this.icon, required this.onPress});
+
   final IconData icon;
   final void Function() onPress;
-
 
   @override
   Widget build(BuildContext context) {

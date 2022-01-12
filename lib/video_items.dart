@@ -7,10 +7,10 @@ class VideoItems extends StatefulWidget {
   final bool looping;
   final bool autoplay;
 
-
   VideoItems({
     required this.videoPlayerController,
-    required this.looping, required this.autoplay,
+    required this.looping,
+    required this.autoplay,
   });
 
   @override
@@ -26,7 +26,7 @@ class _VideoItemsState extends State<VideoItems> {
     _chewieController = ChewieController(
       videoPlayerController: widget.videoPlayerController,
       // width and height of screen
-      aspectRatio:5/8,
+      aspectRatio: 5 / 8,
       // to play automatically
       autoInitialize: true,
       autoPlay: widget.autoplay,
@@ -58,5 +58,4 @@ class _VideoItemsState extends State<VideoItems> {
       ),
     );
   }
-
 }

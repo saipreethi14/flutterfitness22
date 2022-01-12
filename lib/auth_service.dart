@@ -1,5 +1,3 @@
-
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:ff/Coach.dart';
 import 'package:ff/Coachsetter.dart';
@@ -10,28 +8,25 @@ import 'package:flutter/material.dart';
 class AuthService {
   final FirebaseAuth _auth;
 
-
   AuthService(this._auth);
 
   Stream<User?> get authStateChanges => _auth.idTokenChanges();
 
   Future<String> login(String email, String password) async {
-      await _auth.signInWithEmailAndPassword(email: email, password: password);
-      return "Logged In";
-
+    await _auth.signInWithEmailAndPassword(email: email, password: password);
+    return "Logged In";
   }
 
   Future<String> Signup(String email, String password) async {
-
-      await _auth.createUserWithEmailAndPassword(email: email, password: password);
-      return "Signed Up";
+    await _auth.createUserWithEmailAndPassword(
+        email: email, password: password);
+    return "Signed Up";
   }
-  Future Signout() async{
+
+  Future Signout() async {
     print(_auth.currentUser);
     return _auth.signOut();
   }
-
-
 }
 // CollectionReference _collectionRef =
 // FirebaseFirestore.instance.collection('coach');
