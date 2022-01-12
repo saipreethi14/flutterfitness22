@@ -11,6 +11,7 @@ class ResusableCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      // GestureDetector capture user's gesture and dispatch multiple events
       onTap: onPress,
       child: Container(
         child: cardChild,

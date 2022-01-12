@@ -15,11 +15,14 @@ class ImageContent extends StatelessWidget {
         SizedBox(
           height: 15.0,
         ),
-        Text(label,
-            style: TextStyle(
-                fontFamily: 'Aleo',
-                fontWeight: FontWeight.bold,
-                color: Colors.black)),
+        Text(
+          label,
+          style: TextStyle(
+            fontFamily: 'Aleo',
+            fontWeight: FontWeight.bold,
+            color: Color(0xFF660000),
+          ),
+        ),
       ],
     );
   }
