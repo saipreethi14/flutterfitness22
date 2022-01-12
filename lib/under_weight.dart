@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'bmi.dart';
 
+// This page gives diet plan to the users whose BMI comes under under-weight.
+
 class underWeight extends StatefulWidget {
   const underWeight({Key? key}) : super(key: key);
 

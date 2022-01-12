@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:ff/HomePage.dart';
 
+// this class has been designed to give some basic info about our team.
+
 class AboutUs extends StatefulWidget {
   const AboutUs({Key? key}) : super(key: key);
 

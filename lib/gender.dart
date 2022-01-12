@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+// This class is linked with bmi calculator page for selecting gender.
+
 class Gender1 extends StatelessWidget {
   Gender1({required this.contColor, required this.customChild, required this.otp});
 

@@ -10,6 +10,9 @@ import 'gender.dart';
 import 'bad.dart';
 import 'result.dart';
 
+/* This is a BMI calculator which is linked with over-weight and under-weight diet plans
+ that user can follow according to their calculated BMI result. */
+
 enum Gender {
   male,
   female,
@@ -166,7 +169,7 @@ class _bmiState extends State<bmi> {
 
                   Padding(
                     padding: const EdgeInsets.only(top: 10, bottom: 10, right: 30),
-                    child: Gender1(
+                    child: Gender1(    // using gender class.
                       otp: (){
                         setState(() {
                           selectedGender = Gender.female;
@@ -281,7 +284,7 @@ class _bmiState extends State<bmi> {
                       padding: const EdgeInsets.only(left:110.0),
                       child: Row(
                         children: <Widget>[
-                          PlusMinus(
+                          PlusMinus(   // PlusMinus class has been used here to set +,- buttons
                             onPress: (){
                               setState(() {
                                 age--;
@@ -315,7 +318,7 @@ class _bmiState extends State<bmi> {
                        weight = double.parse(_weightController.text);
 
                       _result = weight/(height*height);  ////////////BMI FORMULA//////////////
-                      if (_result <= 18.5 ){
+                      if (_result <= 18.5 ){      // conditions to check user's output.
                         comment = 'Under weight';
                       }
                       else if(_result >= 18.5 && _result<= 24.9)
@@ -354,7 +357,7 @@ class _bmiState extends State<bmi> {
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.only(top: 8.0, bottom: 18),
-                  child: TextButton(
+                  child: TextButton(  // Button to navigate to over-weight diet plan.
                     onPressed: (){
                       setState(() {
                         Navigator.push(context, MaterialPageRoute(builder: (Context) => bad()));
@@ -378,7 +381,7 @@ class _bmiState extends State<bmi> {
 
                 Padding(
                   padding: const EdgeInsets.only(top: 8.0, bottom: 18),
-                  child: TextButton(
+                  child: TextButton(   // Button to navigate to under-weight diet plan.
                     onPressed: (){
                       setState(() {
                         Navigator.push(context, MaterialPageRoute(builder: (Context) => underWeight()));
