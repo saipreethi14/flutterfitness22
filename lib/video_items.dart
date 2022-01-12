@@ -25,10 +25,13 @@ class _VideoItemsState extends State<VideoItems> {
     super.initState();
     _chewieController = ChewieController(
       videoPlayerController: widget.videoPlayerController,
+      // width and height of screen
       aspectRatio:5/8,
+      // to play automatically
       autoInitialize: true,
       autoPlay: widget.autoplay,
       looping: widget.looping,
+      // to show error message
       errorBuilder: (context, errorMessage) {
         return Center(
           child: Text(

@@ -1,31 +1,38 @@
 import 'package:ff/HomePage.dart';
-
 import 'video_items.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
-import 'package:chewie/chewie.dart';
 
+// here we are not changing our state
 class videoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+     //background color of screen
       backgroundColor: Color(0xFFEBD3D4),
       appBar: AppBar(
+        // background color of appbar
         backgroundColor: Color(0xFF660000),
-        automaticallyImplyLeading: false,
+        // automatically space is given to the title
+        automaticallyImplyLeading: true,
 
         leading: IconButton(
+          //navigate from from page to other
           onPressed: () {
             Navigator.push(context, MaterialPageRoute(builder: (Context) => Homepage()));
           },
+          // icon name
           icon: Icon(Icons.arrow_back_ios_new_rounded),
         ),
         title: Text('Exercise video player',style: TextStyle(fontFamily: 'Aleo',fontWeight: FontWeight.bold),),
         centerTitle: true,
       ),
+      // displayed in list view
       body: ListView(
         children: <Widget>[
+         // creates fixed sized box
            SizedBox(height:10),
+          // title center
           Center(
             child: Text('1.Side Planks',style: TextStyle(
               fontSize: 30,
@@ -38,9 +45,11 @@ class videoPage extends StatelessWidget {
           VideoItems(
             videoPlayerController: VideoPlayerController.network(
           'https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/Sx6dK9lQiok4v2i0/videoblocks-a-bodybuilder-in-blue-shorts-stands-in-a-side-plank-on-a-sports-mat-and-swing-legs-at-the-city-stadium-front-view-close-up-blurred-background-man-uses-mobile-app-on-his-phone-for-training_bbo9wudsv__52d0de3a97c478a63929f8b9120fccf9__P360.mp4'),
+          // related to playing of video
           looping:false,
-            autoplay: true,
+           autoplay: true,
           ),
+          // creates sized box after this
           SizedBox(height:10),
           Center(
             child: Text('2. Ab Wheel Rollouts',style: TextStyle(

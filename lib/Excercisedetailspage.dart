@@ -1,8 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+//this page displays all the details of the exercises
+// this stateless widget is used because state is not changing
 class Exercisedetailspage extends StatelessWidget {
   final int index;
+  //the description of exercises is here.
   final List<String> description = <String>[
     'Planks are a great core stabilizing exercise. Your entire core is stabilized through constant tension, so nothing is neglected and they are completely safe.  Get in pushup position on your forearms with your elbows bent.  Hold yourself up in a straight line and pull your belly button in to create tension.  Hold for as long as you can before your back sags to the floor.  For a more difficult variation, raise your opposite leg and arm off the ground.',
     'The side plank is the same concept as the front plank except this time you’ll be extended on your side with only one elbow and forearm on the ground. Your other hand can point straight up in the air or rest of your hips.  Raise your hips off the ground and keep tension in the core to form a straight line with your body.  Hold until failure.  A variation of the side plank can be moving your hips in a side to side motion (up and down off the ground) for repetitions instead of holding still.  Side planks are great for targeting the obliques.',
@@ -18,29 +21,41 @@ class Exercisedetailspage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // //background color of screen
       backgroundColor: Color(0xFFEBD3D4),
       appBar: AppBar(
         title: Text(
+          //name on the app bar
           'Exercise Details',
           style: TextStyle(fontFamily: 'Aleo',fontWeight: FontWeight.bold),
         ),
+        //app bar background color
         backgroundColor: Color(0xFF660000),
       ),
+      // from now the code design is displayed in body as we are writing in body
+      // used column to display first image then text
       body: Column(
         children: <Widget>[
+          // to display the images
           Image.asset('images/L$index.jpg'),
           Container(
+            // padding is for the exercises description
             padding: EdgeInsets.all(5),
+            //height and width of  exercise details box
             width: 450,
             height: 395,
+            // box decoration for the text box
             decoration: BoxDecoration(
               color: Color(0xFF660000),
               borderRadius: BorderRadius.circular(15),
             ),
+            // to align text in center
             child: Align(
               alignment: Alignment.center,
+              // to display the text of exercise details
               child: Text(
                 description[index],
+                // new font used
                 style: TextStyle(
                     color: Colors.white, fontSize: 18, fontFamily: 'Aleo'),
               ),
