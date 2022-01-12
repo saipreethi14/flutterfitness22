@@ -53,6 +53,7 @@ class _underWeightState extends State<underWeight> {
                     ),
                     child: Row(
                       children: <Widget>[
+                        // list of items that are suggested if they come under under-weight.
                         Padding(
                           padding: const EdgeInsets.only(
                               left: 35.0, top: 35, bottom: 35, right: 15),

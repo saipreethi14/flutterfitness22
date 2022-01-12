@@ -9,6 +9,7 @@ class PlusMinus extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // designed plus minus buttons.
     return RawMaterialButton(
       child: Icon(icon),
       onPressed: onPress,
