@@ -604,7 +604,7 @@ class _badState extends State<bad> {
                                   "300 calories, 40 g carbohydrates,",
                                   style: TextStyle(
                                     fontSize: 10,
-                                    color: Colors.black,
+                                    color: Color(0xFF660000),
                                   ),
                                 ),
                                 Text(

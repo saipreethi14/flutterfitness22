@@ -21,7 +21,7 @@ class Homepage extends StatefulWidget {
 }
 
 class _InputPageState extends State<Homepage> {
-  late FirebaseAuth _auth;
+  //late FirebaseAuth _auth;
 
   @override
   Widget build(BuildContext context) {
@@ -34,8 +34,7 @@ class _InputPageState extends State<Homepage> {
         ),
         title: Text(
           'GET SET GO',
-          style: TextStyle(
-              fontFamily: 'Aleo', fontWeight: FontWeight.bold, fontSize: 22),
+          style: TextStyle(fontFamily: 'Aleo', fontWeight: FontWeight.bold),
         ),
         actions: [
           IconButton(

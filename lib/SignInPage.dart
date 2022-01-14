@@ -52,14 +52,20 @@ class _SignInPageState extends State<SignInPage> {
               child: TextField(
                 controller: emailController,
                 decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'User Email Id',
-                  labelStyle: TextStyle(
-                    fontFamily: 'Aleo',
-                    color: Color(0xFF660000),
-                  ),
-                  hintText: 'Enter Your Email ID',
-                ),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide:
+                          BorderSide(color: Color(0xFF660000), width: 2.0),
+                    ),
+                    labelText: 'User Id',
+                    labelStyle: TextStyle(
+                      fontFamily: 'Aleo',
+                      color: Color(0xFF660000),
+                    ),
+                    hintText: 'Enter Your Email ID',
+                    hintStyle: TextStyle(
+                      fontFamily: 'Aleo',
+                      color: Color(0xFF805D5D),
+                    )),
               ),
             ),
             Padding(
@@ -68,90 +74,109 @@ class _SignInPageState extends State<SignInPage> {
                 controller: passwordController,
                 obscureText: true,
                 decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Password',
-                  labelStyle: TextStyle(
-                    fontFamily: 'Aleo',
-                    color: Color(0xFF660000),
-                  ),
-                  hintText: 'Enter Password',
-                ),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide:
+                          BorderSide(color: Color(0xFF660000), width: 2.0),
+                    ),
+                    labelText: 'Password',
+                    labelStyle: TextStyle(
+                      fontFamily: 'Aleo',
+                      color: Color(0xFF660000),
+                    ),
+                    hintText: 'Enter Password',
+                    hintStyle: TextStyle(
+                      fontFamily: 'Aleo',
+                      color: Color(0xFF805D5D),
+                    )),
               ),
             ),
             SizedBox(height: 8),
             Container(
-                height: 45,
-                padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
-                child: RaisedButton(
-                  textColor: Colors.white,
-                  color: Color(0xFF660000),
-                  child: Text('Login'),
-                  onPressed: () {
-                    // ignore: non_constant_identifier_names
-                    final String email = emailController.text.trim();
-                    final String password = passwordController.text.trim();
+              height: 45,
+              padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+              child: RaisedButton(
+                textColor: Colors.white,
+                color: Color(0xFF660000),
+                child: Text('Login',
+                    style: TextStyle(fontFamily: 'Aleo', fontSize: 16)),
+                onPressed: () {
+                  // ignore: non_constant_identifier_names
+                  final String email = emailController.text.trim();
+                  final String password = passwordController.text.trim();
 
-                    if (email.isEmpty) {
-                      print("Email is Empty");
+                  if (email.isEmpty) {
+                    print("Email is Empty");
+                  } else {
+                    if (password.isEmpty) {
+                      print("Password is Empty");
                     } else {
-                      if (password.isEmpty) {
-                        print("Password is Empty");
-                      } else {
-                        context.read<AuthService>().login(
-                              email,
-                              password,
-                            );
-                        print(email + "Logged in");
-                      }
+                      context.read<AuthService>().login(
+                            email,
+                            password,
+                          );
+                      print(email + "Logged in");
                     }
-                  },
-                )),
+                  }
+                },
+              ),
+            ),
             SizedBox(height: 10),
             Container(
-                child: Row(
-              children: <Widget>[
-                Text(
-                  'Don`t have an account ?',
-                  style: TextStyle(
+              child: Row(
+                children: <Widget>[
+                  Text(
+                    'Don`t have an account ?',
+                    style: TextStyle(
                       fontSize: 16,
+                      fontFamily: 'Aleo',
                       color: Color(
                         0xFF660000,
-                      )),
-                ),
-                FlatButton(
-                  textColor: Color(0xFF660000),
-                  child: Text(
-                    'Sign up',
-                    style: TextStyle(
-                        decoration: TextDecoration.underline, fontSize: 18),
+                      ),
+                    ),
                   ),
-                  onPressed: () {
-                    //signup screen
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (Context) => SignUpPage()));
-                  },
-                )
-              ],
-              mainAxisAlignment: MainAxisAlignment.center,
-            )),
+                  FlatButton(
+                    textColor: Color(0xFF660000),
+                    child: Text(
+                      'Sign up',
+                      style: TextStyle(
+                          fontFamily: 'Aleo',
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18),
+                    ),
+                    onPressed: () {
+                      //signup screen
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (Context) => SignUpPage()));
+                    },
+                  )
+                ],
+                mainAxisAlignment: MainAxisAlignment.center,
+              ),
+            ),
             SizedBox(height: 10),
             Container(
-                height: 50,
-                padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
-                child: RaisedButton(
-                  textColor: Colors.white,
-                  color: Color(0xFF660000),
-                  child: Text('LOGIN WITH FACEBOOK'),
-                  onPressed: () {
-                    final plugin = FacebookLogin(debug: true);
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (Context) => MyApp1(
-                                  plugin: plugin,
-                                )));
-                  },
-                )),
+              height: 50,
+              padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+              child: RaisedButton(
+                textColor: Colors.white,
+                color: Color(0xFF660000),
+                child: Text('Login With Facebook',
+                    style: TextStyle(fontFamily: 'Aleo', fontSize: 16)),
+                onPressed: () {
+                  final plugin = FacebookLogin(debug: true);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (Context) => MyApp1(
+                        plugin: plugin,
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
           ],
         ),
       ),

@@ -48,13 +48,20 @@ class _SignUpPageState extends State<SignUpPage> {
               child: TextField(
                 controller: emailController,
                 decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'User EmailID',
+                  focusedBorder: OutlineInputBorder(
+                    borderSide:
+                        BorderSide(color: Color(0xFF660000), width: 2.0),
+                  ),
+                  labelText: 'User Email id',
                   labelStyle: TextStyle(
                     fontFamily: 'Aleo',
                     color: Color(0xFF660000),
                   ),
-                  hintText: 'Enter Your Name',
+                  hintText: 'Enter Your email',
+                  hintStyle: TextStyle(
+                    fontFamily: 'Aleo',
+                    color: Color(0xFF805D5D),
+                  ),
                 ),
               ),
             ),
@@ -64,9 +71,20 @@ class _SignUpPageState extends State<SignUpPage> {
                 controller: passwordController,
                 obscureText: true,
                 decoration: InputDecoration(
-                  border: OutlineInputBorder(),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide:
+                        BorderSide(color: Color(0xFF660000), width: 2.0),
+                  ),
                   labelText: 'Password',
+                  labelStyle: TextStyle(
+                    fontFamily: 'Aleo',
+                    color: Color(0xFF660000),
+                  ),
                   hintText: 'Enter Password',
+                  hintStyle: TextStyle(
+                    fontFamily: 'Aleo',
+                    color: Color(0xFF805D5D),
+                  ),
                 ),
               ),
             ),
@@ -75,59 +93,85 @@ class _SignUpPageState extends State<SignUpPage> {
               child: TextField(
                 obscureText: true,
                 decoration: InputDecoration(
-                  border: OutlineInputBorder(),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide:
+                        BorderSide(color: Color(0xFF660000), width: 2.0),
+                  ),
                   labelText: 'Confirm Password',
-                  hintText: 'Enter Password',
+                  labelStyle: TextStyle(
+                    fontFamily: 'Aleo',
+                    color: Color(0xFF660000),
+                  ),
+                  hintText: 'Retype Password',
+                  hintStyle: TextStyle(
+                    fontFamily: 'Aleo',
+                    color: Color(0xFF805D5D),
+                  ),
                 ),
               ),
             ),
             SizedBox(height: 10),
             Container(
-                height: 50,
-                padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
-                child: RaisedButton(
-                  textColor: Colors.white,
-                  color: Color(0xFF660000),
-                  child: Text('Sign up'),
-                  onPressed: () {
-                    final String email = emailController.text.trim();
-                    final String password = passwordController.text.trim();
+              height: 50,
+              padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+              child: RaisedButton(
+                textColor: Colors.white,
+                color: Color(0xFF660000),
+                child: Text(
+                  'Sign up',
+                  style: TextStyle(fontFamily: 'Aleo', fontSize: 16),
+                ),
+                onPressed: () {
+                  final String email = emailController.text.trim();
+                  final String password = passwordController.text.trim();
 
-                    if (email.isEmpty) {
-                      print("Email is Empty");
+                  if (email.isEmpty) {
+                    print("Email is Empty");
+                  } else {
+                    if (password.isEmpty) {
+                      print("Password is Empty");
                     } else {
-                      if (password.isEmpty) {
-                        print("Password is Empty");
-                      } else {
-                        context.read<AuthService>().Signup(
-                              email,
-                              password,
-                            );
-                      }
+                      context.read<AuthService>().Signup(
+                            email,
+                            password,
+                          );
                     }
-                    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                  }
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
                       content: Text(
                         "Acoount created",
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(
+                          fontFamily: 'Aleo',
+                          color: Colors.white,
+                        ),
                       ),
                       backgroundColor: Color(0xFF660000),
-                    ));
-                  },
-                )),
+                    ),
+                  );
+                },
+              ),
+            ),
             //SizedBox(height: 10),
             Container(
-                child: Row(
-              children: <Widget>[
-                Text(
-                  'Already have an account ?',
-                  style: TextStyle(fontSize: 16, color: Color(0xFF660000)),
-                ),
-                FlatButton(
+              child: Row(
+                children: <Widget>[
+                  Text(
+                    'Already have an account ?',
+                    style: TextStyle(
+                      fontFamily: 'Aleo',
+                      fontSize: 16,
+                      color: Color(0xFF660000),
+                    ),
+                  ),
+                  FlatButton(
                     textColor: Color(0xFF660000),
                     child: Text(
                       'Sign In',
                       style: TextStyle(
-                          fontSize: 18, decoration: TextDecoration.underline),
+                          fontSize: 18,
+                          fontFamily: 'Aleo',
+                          fontWeight: FontWeight.bold),
                     ),
                     onPressed: () {
                       //signIN screen
@@ -135,10 +179,12 @@ class _SignUpPageState extends State<SignUpPage> {
                           context,
                           MaterialPageRoute(
                               builder: (Context) => SignInPage()));
-                    })
-              ],
-              mainAxisAlignment: MainAxisAlignment.center,
-            )),
+                    },
+                  ),
+                ],
+                mainAxisAlignment: MainAxisAlignment.center,
+              ),
+            ),
           ],
         ),
       ),

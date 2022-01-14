@@ -18,7 +18,7 @@ class _CoachDataState extends State<CoachData> {
   Widget _buildList(QuerySnapshot snapshot) {
     return ListView.separated(
         separatorBuilder: (context, index) => Divider(
-              color: Colors.black,
+              color: Color(0xFF660000),
               thickness: 2,
             ),
         itemCount: snapshot.docs.length,
@@ -40,8 +40,8 @@ class _CoachDataState extends State<CoachData> {
                     CircleAvatar(
                       backgroundImage: NetworkImage(doc['image']),
                       radius: 50,
-                      backgroundColor: Colors.grey,
-                      child: GestureDetector(onTap: () {}),
+                      //backgroundColor: Colors.white,
+                      //child: GestureDetector(onTap: () {}),
                     ),
                   ],
                 ),
